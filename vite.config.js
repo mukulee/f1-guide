@@ -92,6 +92,24 @@ export default defineConfig({
     react(),
     localApiPlugin,
   ],
+  build: {
+    rollupOptions: {
+      output: {
+        // rolldown（Vite 8）要求 manualChunks 为函数形式
+        manualChunks(id) {
+          if (id.includes('node_modules')) {
+            if (id.includes('chart.js') || id.includes('react-chartjs-2')) return 'vendor-chart'
+            if (id.includes('framer-motion'))                               return 'vendor-motion'
+            if (id.includes('leaflet') || id.includes('react-leaflet'))    return 'vendor-map'
+            if (id.includes('@supabase'))                                   return 'vendor-db'
+            if (id.includes('react-router-dom'))                           return 'vendor-router'
+            if (id.includes('/react/') || id.includes('/react-dom/'))      return 'vendor-react'
+          }
+        },
+      },
+    },
+    chunkSizeWarningLimit: 600,
+  },
   server: {
     headers: {
       'Content-Security-Policy': [
