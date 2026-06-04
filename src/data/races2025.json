@@ -1,0 +1,334 @@
+[
+  {
+    "round": 1, "id": "r01",
+    "name": "巴林大奖赛", "nameFull": "FORMULA 1 GULF AIR BAHRAIN GRAND PRIX 2025",
+    "circuit": "巴林国际赛道", "location": "萨基尔",
+    "country": "BHR", "flag": "https://flagcdn.com/w40/bh.png",
+    "dates": "2025 · 3月14–16日", "raceDate": "2025-03-16T15:00:00+03:00",
+    "status": "completed",
+    "podium": [
+      { "pos": 1, "driver": "维斯塔潘", "team": "红牛", "points": "+25分" },
+      { "pos": 2, "driver": "诺里斯",   "team": "迈凯伦", "points": "+18分" },
+      { "pos": 3, "driver": "勒克莱尔","team": "法拉利", "points": "+15分" }
+    ],
+    "fastestLap": { "time": "1:31.447", "driver": "维斯塔潘", "lap": 52 },
+    "trackLength": "5.412 km", "laps": 57, "lapRecord": "1:31.447", "recordHolder": "维斯塔潘",
+    "sessions": [
+      { "name": "自由练习赛 1", "day": "周五 · 3月14日", "time": "13:30" },
+      { "name": "自由练习赛 2", "day": "周五 · 3月14日", "time": "17:00" },
+      { "name": "自由练习赛 3", "day": "周六 · 3月15日", "time": "13:30" },
+      { "name": "排位赛", "day": "周六 · 3月15日", "time": "17:00", "highlight": true },
+      { "name": "正赛",   "day": "周日 · 3月16日", "time": "15:00", "highlight": true, "isRace": true }
+    ]
+  },
+  {
+    "round": 2, "id": "r02",
+    "name": "沙特阿拉伯大奖赛", "nameFull": "FORMULA 1 STC SAUDI ARABIAN GRAND PRIX 2025",
+    "circuit": "吉达滨海赛道", "location": "吉达",
+    "country": "SAU", "flag": "https://flagcdn.com/w40/sa.png",
+    "dates": "2025 · 3月21–23日", "raceDate": "2025-03-23T17:00:00+03:00",
+    "status": "completed",
+    "podium": [
+      { "pos": 1, "driver": "皮亚斯特里", "team": "迈凯伦", "points": "+25分" },
+      { "pos": 2, "driver": "诺里斯",     "team": "迈凯伦", "points": "+18分" },
+      { "pos": 3, "driver": "拉塞尔",     "team": "梅赛德斯","points": "+15分" }
+    ],
+    "fastestLap": { "time": "1:29.023", "driver": "诺里斯", "lap": 45 },
+    "trackLength": "6.174 km", "laps": 50, "lapRecord": "1:29.023", "recordHolder": "诺里斯",
+    "sessions": [
+      { "name": "自由练习赛 1", "day": "周五 · 3月21日", "time": "18:30" },
+      { "name": "自由练习赛 2", "day": "周五 · 3月21日", "time": "22:00" },
+      { "name": "自由练习赛 3", "day": "周六 · 3月22日", "time": "18:30" },
+      { "name": "排位赛", "day": "周六 · 3月22日", "time": "22:00", "highlight": true },
+      { "name": "正赛",   "day": "周日 · 3月23日", "time": "17:00", "highlight": true, "isRace": true }
+    ]
+  },
+  {
+    "round": 3, "id": "r03",
+    "name": "澳大利亚大奖赛", "nameFull": "FORMULA 1 LOUIS VUITTON AUSTRALIAN GRAND PRIX 2025",
+    "circuit": "阿尔伯特公园赛道", "location": "墨尔本",
+    "country": "AUS", "flag": "https://flagcdn.com/w40/au.png",
+    "dates": "2025 · 3月28–30日", "raceDate": "2025-03-30T15:00:00+11:00",
+    "status": "completed",
+    "podium": [
+      { "pos": 1, "driver": "诺里斯",     "team": "迈凯伦", "points": "+25分" },
+      { "pos": 2, "driver": "勒克莱尔",   "team": "法拉利", "points": "+18分" },
+      { "pos": 3, "driver": "皮亚斯特里", "team": "迈凯伦", "points": "+15分" }
+    ],
+    "fastestLap": { "time": "1:19.813", "driver": "皮亚斯特里", "lap": 57 },
+    "trackLength": "5.278 km", "laps": 58, "lapRecord": "1:19.813", "recordHolder": "皮亚斯特里",
+    "sessions": [
+      { "name": "自由练习赛 1", "day": "周五 · 3月28日", "time": "11:30" },
+      { "name": "自由练习赛 2", "day": "周五 · 3月28日", "time": "15:00" },
+      { "name": "自由练习赛 3", "day": "周六 · 3月29日", "time": "11:30" },
+      { "name": "排位赛", "day": "周六 · 3月29日", "time": "15:00", "highlight": true },
+      { "name": "正赛",   "day": "周日 · 3月30日", "time": "15:00", "highlight": true, "isRace": true }
+    ]
+  },
+  {
+    "round": 4, "id": "r04",
+    "name": "日本大奖赛", "nameFull": "FORMULA 1 LENOVO JAPANESE GRAND PRIX 2025",
+    "circuit": "铃鹿赛道", "location": "铃鹿",
+    "country": "JPN", "flag": "https://flagcdn.com/w40/jp.png",
+    "dates": "2025 · 4月4–6日", "raceDate": "2025-04-06T14:00:00+09:00",
+    "status": "completed",
+    "podium": [
+      { "pos": 1, "driver": "维斯塔潘", "team": "红牛",   "points": "+25分" },
+      { "pos": 2, "driver": "诺里斯",   "team": "迈凯伦", "points": "+18分" },
+      { "pos": 3, "driver": "拉塞尔",   "team": "梅赛德斯","points": "+15分" }
+    ],
+    "fastestLap": { "time": "1:30.983", "driver": "维斯塔潘", "lap": 53 },
+    "trackLength": "5.807 km", "laps": 53, "lapRecord": "1:30.983", "recordHolder": "维斯塔潘",
+    "sessions": [
+      { "name": "自由练习赛 1", "day": "周五 · 4月4日",  "time": "11:30" },
+      { "name": "自由练习赛 2", "day": "周五 · 4月4日",  "time": "15:00" },
+      { "name": "自由练习赛 3", "day": "周六 · 4月5日",  "time": "11:30" },
+      { "name": "排位赛", "day": "周六 · 4月5日",  "time": "15:00", "highlight": true },
+      { "name": "正赛",   "day": "周日 · 4月6日",  "time": "14:00", "highlight": true, "isRace": true }
+    ]
+  },
+  {
+    "round": 5, "id": "r05",
+    "name": "中国大奖赛", "nameFull": "FORMULA 1 HEINEKEN CHINESE GRAND PRIX 2025",
+    "circuit": "上海国际赛道", "location": "上海",
+    "country": "CHN", "flag": "https://flagcdn.com/w40/cn.png",
+    "dates": "2025 · 4月18–20日", "raceDate": "2025-04-20T15:00:00+08:00",
+    "status": "completed",
+    "podium": [
+      { "pos": 1, "driver": "诺里斯",     "team": "迈凯伦", "points": "+25分" },
+      { "pos": 2, "driver": "皮亚斯特里", "team": "迈凯伦", "points": "+18分" },
+      { "pos": 3, "driver": "维斯塔潘",   "team": "红牛",   "points": "+15分" }
+    ],
+    "fastestLap": { "time": "1:33.664", "driver": "诺里斯", "lap": 56 },
+    "trackLength": "5.451 km", "laps": 56, "lapRecord": "1:33.664", "recordHolder": "诺里斯",
+    "sessions": [
+      { "name": "自由练习赛 1", "day": "周五 · 4月18日", "time": "11:30" },
+      { "name": "冲刺排位赛",  "day": "周五 · 4月18日", "time": "15:30", "highlight": true },
+      { "name": "冲刺赛",     "day": "周六 · 4月19日", "time": "11:00", "highlight": true },
+      { "name": "排位赛", "day": "周六 · 4月19日", "time": "15:00", "highlight": true },
+      { "name": "正赛",   "day": "周日 · 4月20日", "time": "15:00", "highlight": true, "isRace": true }
+    ]
+  },
+  {
+    "round": 6, "id": "r06",
+    "name": "迈阿密大奖赛", "nameFull": "FORMULA 1 CRYPTO.COM MIAMI GRAND PRIX 2025",
+    "circuit": "迈阿密国际汽车大奖赛赛道", "location": "迈阿密",
+    "country": "USA", "flag": "https://flagcdn.com/w40/us.png",
+    "dates": "2025 · 5月2–4日", "raceDate": "2025-05-04T16:00:00-04:00",
+    "status": "completed",
+    "podium": [
+      { "pos": 1, "driver": "皮亚斯特里", "team": "迈凯伦", "points": "+25分" },
+      { "pos": 2, "driver": "诺里斯",     "team": "迈凯伦", "points": "+18分" },
+      { "pos": 3, "driver": "勒克莱尔",   "team": "法拉利", "points": "+15分" }
+    ],
+    "fastestLap": { "time": "1:29.454", "driver": "皮亚斯特里", "lap": 55 },
+    "trackLength": "5.412 km", "laps": 57, "lapRecord": "1:27.241", "recordHolder": "维斯塔潘",
+    "sessions": [
+      { "name": "自由练习赛 1", "day": "周五 · 5月2日",  "time": "12:30" },
+      { "name": "冲刺排位赛",  "day": "周五 · 5月2日",  "time": "16:30", "highlight": true },
+      { "name": "冲刺赛",     "day": "周六 · 5月3日",  "time": "12:00", "highlight": true },
+      { "name": "排位赛", "day": "周六 · 5月3日",  "time": "16:00", "highlight": true },
+      { "name": "正赛",   "day": "周日 · 5月4日",  "time": "16:00", "highlight": true, "isRace": true }
+    ]
+  },
+  {
+    "round": 7, "id": "r07",
+    "name": "艾米利亚-罗马涅大奖赛", "nameFull": "FORMULA 1 AWS GRAN PREMIO DELL'EMILIA-ROMAGNA 2025",
+    "circuit": "恩佐和迪诺·法拉利赛道", "location": "伊莫拉",
+    "country": "ITA", "flag": "https://flagcdn.com/w40/it.png",
+    "dates": "2025 · 5月16–18日", "raceDate": "2025-05-18T15:00:00+02:00",
+    "status": "completed",
+    "podium": [
+      { "pos": 1, "driver": "维斯塔潘", "team": "红牛",   "points": "+25分" },
+      { "pos": 2, "driver": "诺里斯",   "team": "迈凯伦", "points": "+18分" },
+      { "pos": 3, "driver": "拉塞尔",   "team": "梅赛德斯","points": "+15分" }
+    ],
+    "fastestLap": { "time": "1:15.484", "driver": "维斯塔潘", "lap": 63 },
+    "trackLength": "4.909 km", "laps": 63, "lapRecord": "1:15.484", "recordHolder": "维斯塔潘",
+    "sessions": [
+      { "name": "自由练习赛 1", "day": "周五 · 5月16日", "time": "13:30" },
+      { "name": "自由练习赛 2", "day": "周五 · 5月16日", "time": "17:00" },
+      { "name": "自由练习赛 3", "day": "周六 · 5月17日", "time": "12:30" },
+      { "name": "排位赛", "day": "周六 · 5月17日", "time": "16:00", "highlight": true },
+      { "name": "正赛",   "day": "周日 · 5月18日", "time": "15:00", "highlight": true, "isRace": true }
+    ]
+  },
+  {
+    "round": 8, "id": "r08",
+    "name": "摩纳哥大奖赛", "nameFull": "FORMULA 1 TAG HEUER GRAND PRIX DE MONACO 2025",
+    "circuit": "摩纳哥赛道", "location": "蒙特卡洛",
+    "country": "MCO", "flag": "https://flagcdn.com/w40/mc.png",
+    "dates": "2025 · 5月23–25日", "raceDate": "2025-05-25T15:00:00+02:00",
+    "status": "next",
+    "podium": null,
+    "fastestLap": null,
+    "trackLength": "3.337 km", "laps": 78, "lapRecord": "1:12.909", "recordHolder": "汉密尔顿",
+    "sessions": [
+      { "name": "自由练习赛 1", "day": "周四 · 5月22日", "time": "13:30" },
+      { "name": "自由练习赛 2", "day": "周四 · 5月22日", "time": "17:00" },
+      { "name": "自由练习赛 3", "day": "周六 · 5月24日", "time": "12:30" },
+      { "name": "排位赛", "day": "周六 · 5月24日", "time": "16:00", "highlight": true },
+      { "name": "正赛",   "day": "周日 · 5月25日", "time": "15:00", "highlight": true, "isRace": true }
+    ]
+  },
+  {
+    "round": 9, "id": "r09",
+    "name": "西班牙大奖赛", "nameFull": "FORMULA 1 ARAMCO GRAN PREMIO DE ESPAÑA 2025",
+    "circuit": "巴塞罗那-加泰罗尼亚赛道", "location": "巴塞罗那",
+    "country": "ESP", "flag": "https://flagcdn.com/w40/es.png",
+    "dates": "2025 · 5月30–6月1日", "raceDate": "2025-06-01T15:00:00+02:00",
+    "status": "upcoming",
+    "podium": null, "fastestLap": null,
+    "trackLength": "4.657 km", "laps": 66, "lapRecord": "1:16.330", "recordHolder": "维斯塔潘",
+    "sessions": [
+      { "name": "自由练习赛 1", "day": "周五 · 5月30日", "time": "13:30" },
+      { "name": "自由练习赛 2", "day": "周五 · 5月30日", "time": "17:00" },
+      { "name": "自由练习赛 3", "day": "周六 · 5月31日", "time": "12:30" },
+      { "name": "排位赛", "day": "周六 · 5月31日", "time": "16:00", "highlight": true },
+      { "name": "正赛",   "day": "周日 · 6月1日",  "time": "15:00", "highlight": true, "isRace": true }
+    ]
+  },
+  {
+    "round": 10, "id": "r10",
+    "name": "加拿大大奖赛", "nameFull": "FORMULA 1 AWS GRAND PRIX DU CANADA 2025",
+    "circuit": "吉尔·维伦纽夫赛道", "location": "蒙特利尔",
+    "country": "CAN", "flag": "https://flagcdn.com/w40/ca.png",
+    "dates": "2025 · 6月13–15日", "raceDate": "2025-06-15T14:00:00-04:00",
+    "status": "upcoming",
+    "podium": null, "fastestLap": null,
+    "trackLength": "4.361 km", "laps": 70, "lapRecord": "1:13.078", "recordHolder": "汉密尔顿",
+    "sessions": [
+      { "name": "自由练习赛 1", "day": "周五 · 6月13日", "time": "13:30" },
+      { "name": "自由练习赛 2", "day": "周五 · 6月13日", "time": "17:00" },
+      { "name": "自由练习赛 3", "day": "周六 · 6月14日", "time": "12:30" },
+      { "name": "排位赛", "day": "周六 · 6月14日", "time": "16:00", "highlight": true },
+      { "name": "正赛",   "day": "周日 · 6月15日", "time": "14:00", "highlight": true, "isRace": true }
+    ]
+  },
+  {
+    "round": 11, "id": "r11",
+    "name": "奥地利大奖赛",
+    "circuit": "红牛环形赛道", "location": "斯皮尔伯格",
+    "country": "AUT", "flag": "https://flagcdn.com/w40/at.png",
+    "dates": "2025 · 6月27–29日", "raceDate": "2025-06-29T15:00:00+02:00",
+    "status": "upcoming", "podium": null, "fastestLap": null,
+    "trackLength": "4.318 km", "laps": 71, "lapRecord": "1:05.619", "recordHolder": "博塔斯"
+  },
+  {
+    "round": 12, "id": "r12",
+    "name": "英国大奖赛",
+    "circuit": "银石赛道", "location": "诺桑普顿郡",
+    "country": "GBR", "flag": "https://flagcdn.com/w40/gb.png",
+    "dates": "2025 · 7月4–6日", "raceDate": "2025-07-06T15:00:00+01:00",
+    "status": "upcoming", "podium": null, "fastestLap": null,
+    "trackLength": "5.891 km", "laps": 52, "lapRecord": "1:27.097", "recordHolder": "汉密尔顿"
+  },
+  {
+    "round": 13, "id": "r13",
+    "name": "比利时大奖赛",
+    "circuit": "斯帕-弗朗科尔尚赛道", "location": "斯塔沃洛",
+    "country": "BEL", "flag": "https://flagcdn.com/w40/be.png",
+    "dates": "2025 · 7月25–27日", "raceDate": "2025-07-27T15:00:00+02:00",
+    "status": "upcoming", "podium": null, "fastestLap": null,
+    "trackLength": "7.004 km", "laps": 44, "lapRecord": "1:46.286", "recordHolder": "博塔斯"
+  },
+  {
+    "round": 14, "id": "r14",
+    "name": "匈牙利大奖赛",
+    "circuit": "匈牙利大奖赛赛道", "location": "布达佩斯",
+    "country": "HUN", "flag": "https://flagcdn.com/w40/hu.png",
+    "dates": "2025 · 8月1–3日", "raceDate": "2025-08-03T15:00:00+02:00",
+    "status": "upcoming", "podium": null, "fastestLap": null,
+    "trackLength": "4.381 km", "laps": 70, "lapRecord": "1:16.627", "recordHolder": "汉密尔顿"
+  },
+  {
+    "round": 15, "id": "r15",
+    "name": "荷兰大奖赛",
+    "circuit": "赞德沃特赛道", "location": "赞德沃特",
+    "country": "NLD", "flag": "https://flagcdn.com/w40/nl.png",
+    "dates": "2025 · 8月29–31日", "raceDate": "2025-08-31T15:00:00+02:00",
+    "status": "upcoming", "podium": null, "fastestLap": null,
+    "trackLength": "4.259 km", "laps": 72, "lapRecord": "1:11.097", "recordHolder": "维斯塔潘"
+  },
+  {
+    "round": 16, "id": "r16",
+    "name": "意大利大奖赛",
+    "circuit": "蒙扎赛道", "location": "蒙扎",
+    "country": "ITA", "flag": "https://flagcdn.com/w40/it.png",
+    "dates": "2025 · 9月5–7日", "raceDate": "2025-09-07T15:00:00+02:00",
+    "status": "upcoming", "podium": null, "fastestLap": null,
+    "trackLength": "5.793 km", "laps": 53, "lapRecord": "1:21.046", "recordHolder": "巴里切罗"
+  },
+  {
+    "round": 17, "id": "r17",
+    "name": "阿塞拜疆大奖赛",
+    "circuit": "巴库城市赛道", "location": "巴库",
+    "country": "AZE", "flag": "https://flagcdn.com/w40/az.png",
+    "dates": "2025 · 9月19–21日", "raceDate": "2025-09-21T15:00:00+04:00",
+    "status": "upcoming", "podium": null, "fastestLap": null,
+    "trackLength": "6.003 km", "laps": 51, "lapRecord": "1:43.009", "recordHolder": "勒克莱尔"
+  },
+  {
+    "round": 18, "id": "r18",
+    "name": "新加坡大奖赛",
+    "circuit": "滨海湾街道赛道", "location": "新加坡",
+    "country": "SGP", "flag": "https://flagcdn.com/w40/sg.png",
+    "dates": "2025 · 10月3–5日", "raceDate": "2025-10-05T20:00:00+08:00",
+    "status": "upcoming", "podium": null, "fastestLap": null,
+    "trackLength": "5.063 km", "laps": 62, "lapRecord": "1:35.867", "recordHolder": "维斯塔潘"
+  },
+  {
+    "round": 19, "id": "r19",
+    "name": "美国大奖赛",
+    "circuit": "美洲赛道", "location": "奥斯汀",
+    "country": "USA", "flag": "https://flagcdn.com/w40/us.png",
+    "dates": "2025 · 10月17–19日", "raceDate": "2025-10-19T14:00:00-05:00",
+    "status": "upcoming", "podium": null, "fastestLap": null,
+    "trackLength": "5.513 km", "laps": 56, "lapRecord": "1:36.169", "recordHolder": "维斯塔潘"
+  },
+  {
+    "round": 20, "id": "r20",
+    "name": "墨西哥城大奖赛",
+    "circuit": "墨西哥城赛道", "location": "墨西哥城",
+    "country": "MEX", "flag": "https://flagcdn.com/w40/mx.png",
+    "dates": "2025 · 10月24–26日", "raceDate": "2025-10-26T14:00:00-06:00",
+    "status": "upcoming", "podium": null, "fastestLap": null,
+    "trackLength": "4.304 km", "laps": 71, "lapRecord": "1:17.774", "recordHolder": "博塔斯"
+  },
+  {
+    "round": 21, "id": "r21",
+    "name": "圣保罗大奖赛",
+    "circuit": "何塞·卡洛斯·帕塞赛道", "location": "圣保罗",
+    "country": "BRA", "flag": "https://flagcdn.com/w40/br.png",
+    "dates": "2025 · 11月7–9日", "raceDate": "2025-11-09T14:00:00-03:00",
+    "status": "upcoming", "podium": null, "fastestLap": null,
+    "trackLength": "4.309 km", "laps": 71, "lapRecord": "1:10.540", "recordHolder": "汉密尔顿"
+  },
+  {
+    "round": 22, "id": "r22",
+    "name": "拉斯维加斯大奖赛",
+    "circuit": "拉斯维加斯街道赛道", "location": "拉斯维加斯",
+    "country": "USA", "flag": "https://flagcdn.com/w40/us.png",
+    "dates": "2025 · 11月20–22日", "raceDate": "2025-11-22T22:00:00-08:00",
+    "status": "upcoming", "podium": null, "fastestLap": null,
+    "trackLength": "6.201 km", "laps": 50, "lapRecord": "1:35.490", "recordHolder": "勒克莱尔"
+  },
+  {
+    "round": 23, "id": "r23",
+    "name": "卡塔尔大奖赛",
+    "circuit": "卢赛尔国际赛道", "location": "卢赛尔",
+    "country": "QAT", "flag": "https://flagcdn.com/w40/qa.png",
+    "dates": "2025 · 11月28–30日", "raceDate": "2025-11-30T19:00:00+03:00",
+    "status": "upcoming", "podium": null, "fastestLap": null,
+    "trackLength": "5.380 km", "laps": 57, "lapRecord": "1:24.319", "recordHolder": "阿隆索"
+  },
+  {
+    "round": 24, "id": "r24",
+    "name": "阿布扎比大奖赛",
+    "circuit": "亚斯码头赛道", "location": "阿布扎比",
+    "country": "UAE", "flag": "https://flagcdn.com/w40/ae.png",
+    "dates": "2025 · 12月5–7日", "raceDate": "2025-12-07T17:00:00+04:00",
+    "status": "upcoming", "podium": null, "fastestLap": null,
+    "trackLength": "5.281 km", "laps": 58, "lapRecord": "1:26.103", "recordHolder": "汉密尔顿"
+  }
+]

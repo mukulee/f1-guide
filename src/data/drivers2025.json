@@ -1,0 +1,178 @@
+[
+  {
+    "rank": 1, "prev": 2, "code": "NOR", "name": "兰多·诺里斯",
+    "nat": "英国", "flag": "🇬🇧",
+    "team": "McLaren", "tname": "迈凯伦",
+    "wins": 4, "podiums": 9, "pts": 146, "color": "#FF8700",
+    "img": "https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/2025Drivers/norris.jpg",
+    "trend": [0, 18, 43, 68, 86, 111, 130, 146, 146]
+  },
+  {
+    "rank": 2, "prev": 3, "code": "PIA", "name": "奥斯卡·皮亚斯特里",
+    "nat": "澳大利亚", "flag": "🇦🇺",
+    "team": "McLaren", "tname": "迈凯伦",
+    "wins": 3, "podiums": 6, "pts": 135, "color": "#FF9F30",
+    "img": "https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/2025Drivers/piastri.jpg",
+    "trend": [0, 25, 43, 68, 94, 113, 125, 131, 135]
+  },
+  {
+    "rank": 3, "prev": 1, "code": "RUS", "name": "乔治·拉塞尔",
+    "nat": "英国", "flag": "🇬🇧",
+    "team": "Mercedes", "tname": "梅赛德斯",
+    "wins": 2, "podiums": 5, "pts": 117, "color": "#00D2BE",
+    "img": "https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/2025Drivers/russell.jpg",
+    "trend": [0, 12, 30, 48, 68, 88, 100, 110, 117]
+  },
+  {
+    "rank": 4, "prev": 4, "code": "LEC", "name": "查尔斯·勒克莱尔",
+    "nat": "摩纳哥", "flag": "🇲🇨",
+    "team": "Ferrari", "tname": "法拉利",
+    "wins": 1, "podiums": 5, "pts": 113, "color": "#DC0000",
+    "img": "https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/2025Drivers/leclerc.jpg",
+    "trend": [0, 15, 28, 46, 64, 80, 95, 107, 113]
+  },
+  {
+    "rank": 5, "prev": 5, "code": "VER", "name": "马克斯·维斯塔潘",
+    "nat": "荷兰", "flag": "🇳🇱",
+    "team": "Red Bull", "tname": "红牛",
+    "wins": 1, "podiums": 4, "pts": 107, "color": "#3671C6",
+    "img": "https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/2025Drivers/verstappen.jpg",
+    "trend": [0, 25, 37, 55, 80, 95, 100, 103, 107]
+  },
+  {
+    "rank": 6, "prev": 7, "code": "HAM", "name": "刘易斯·汉密尔顿",
+    "nat": "英国", "flag": "🇬🇧",
+    "team": "Ferrari", "tname": "法拉利",
+    "wins": 1, "podiums": 3, "pts": 82, "color": "#E0393A",
+    "img": "https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/2025Drivers/hamilton.jpg",
+    "trend": [0, 8, 20, 38, 52, 63, 72, 78, 82]
+  },
+  {
+    "rank": 7, "prev": 6, "code": "SAI", "name": "卡洛斯·塞恩斯",
+    "nat": "西班牙", "flag": "🇪🇸",
+    "team": "Williams", "tname": "威廉姆斯",
+    "wins": 1, "podiums": 2, "pts": 76, "color": "#005AFF",
+    "img": "https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/2025Drivers/sainz.jpg",
+    "trend": [0, 6, 16, 26, 38, 51, 62, 70, 76]
+  },
+  {
+    "rank": 8, "prev": 8, "code": "ANT", "name": "安德烈亚·安东内利",
+    "nat": "意大利", "flag": "🇮🇹",
+    "team": "Mercedes", "tname": "梅赛德斯",
+    "wins": 0, "podiums": 2, "pts": 62, "color": "#50E3C2",
+    "img": "https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/2025Drivers/antonelli.jpg",
+    "trend": [0, 6, 18, 30, 42, 52, 56, 59, 62]
+  },
+  {
+    "rank": 9, "prev": 10, "code": "ALO", "name": "费尔南多·阿隆索",
+    "nat": "西班牙", "flag": "🇪🇸",
+    "team": "Aston Martin", "tname": "阿斯顿·马丁",
+    "wins": 0, "podiums": 1, "pts": 44, "color": "#006F62",
+    "img": "https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/2025Drivers/alonso.jpg",
+    "trend": [0, 4, 12, 20, 28, 34, 38, 41, 44]
+  },
+  {
+    "rank": 10, "prev": 9, "code": "GAS", "name": "皮埃尔·加斯利",
+    "nat": "法国", "flag": "🇫🇷",
+    "team": "Alpine", "tname": "阿尔派因",
+    "wins": 0, "podiums": 1, "pts": 36, "color": "#0090FF",
+    "img": "https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/2025Drivers/gasly.jpg",
+    "trend": [0, 4, 10, 16, 22, 27, 30, 33, 36]
+  },
+  {
+    "rank": 11, "prev": 11, "code": "HUL", "name": "尼克·胡肯伯格",
+    "nat": "德国", "flag": "🇩🇪",
+    "team": "Kick Sauber", "tname": "竞技 Sauber",
+    "wins": 0, "podiums": 0, "pts": 26, "color": "#00D4AA",
+    "img": "https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/2025Drivers/hulkenberg.jpg",
+    "trend": [0, 2, 6, 10, 14, 18, 21, 23, 26]
+  },
+  {
+    "rank": 12, "prev": 12, "code": "DOO", "name": "杰克·杜汉",
+    "nat": "澳大利亚", "flag": "🇦🇺",
+    "team": "Alpine", "tname": "阿尔派因",
+    "wins": 0, "podiums": 0, "pts": 24, "color": "#3DB0FF",
+    "img": "https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/2025Drivers/doohan.jpg",
+    "trend": [0, 0, 4, 8, 12, 16, 19, 22, 24]
+  },
+  {
+    "rank": 13, "prev": 14, "code": "LAW", "name": "利亚姆·劳森",
+    "nat": "新西兰", "flag": "🇳🇿",
+    "team": "Red Bull", "tname": "红牛",
+    "wins": 0, "podiums": 0, "pts": 20, "color": "#4D84D2",
+    "img": "https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/2025Drivers/lawson.jpg",
+    "trend": [0, 0, 2, 4, 8, 12, 14, 17, 20]
+  },
+  {
+    "rank": 14, "prev": 13, "code": "TSU", "name": "角田裕毅",
+    "nat": "日本", "flag": "🇯🇵",
+    "team": "RB", "tname": "维萨 RB",
+    "wins": 0, "podiums": 0, "pts": 18, "color": "#6692FF",
+    "img": "https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/2025Drivers/tsunoda.jpg",
+    "trend": [0, 4, 8, 12, 14, 16, 16, 17, 18]
+  },
+  {
+    "rank": 15, "prev": 15, "code": "STR", "name": "兰斯·斯特罗尔",
+    "nat": "加拿大", "flag": "🇨🇦",
+    "team": "Aston Martin", "tname": "阿斯顿·马丁",
+    "wins": 0, "podiums": 0, "pts": 14, "color": "#007A6E",
+    "img": "https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/2025Drivers/stroll.jpg",
+    "trend": [0, 0, 2, 4, 6, 8, 10, 12, 14]
+  },
+  {
+    "rank": 16, "prev": 16, "code": "ALB", "name": "亚历山大·阿尔邦",
+    "nat": "泰国", "flag": "🇹🇭",
+    "team": "Williams", "tname": "威廉姆斯",
+    "wins": 0, "podiums": 0, "pts": 12, "color": "#0044CC",
+    "img": "https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/2025Drivers/albon.jpg",
+    "trend": [0, 0, 0, 2, 4, 6, 8, 10, 12]
+  },
+  {
+    "rank": 17, "prev": 17, "code": "BEA", "name": "奥利弗·贝尔曼",
+    "nat": "英国", "flag": "🇬🇧",
+    "team": "Haas", "tname": "哈斯",
+    "wins": 0, "podiums": 0, "pts": 8, "color": "#B8B8B8",
+    "img": "https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/2025Drivers/bearman.jpg",
+    "trend": [0, 0, 0, 0, 2, 4, 6, 7, 8]
+  },
+  {
+    "rank": 18, "prev": 18, "code": "OCO", "name": "埃斯特班·奥康",
+    "nat": "法国", "flag": "🇫🇷",
+    "team": "Haas", "tname": "哈斯",
+    "wins": 0, "podiums": 0, "pts": 6, "color": "#999999",
+    "img": "https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/2025Drivers/ocon.jpg",
+    "trend": [0, 0, 2, 2, 3, 4, 5, 5, 6]
+  },
+  {
+    "rank": 19, "prev": 19, "code": "BOR", "name": "加布里埃尔·博尔托莱托",
+    "nat": "巴西", "flag": "🇧🇷",
+    "team": "Kick Sauber", "tname": "竞技 Sauber",
+    "wins": 0, "podiums": 0, "pts": 4, "color": "#00B890",
+    "img": "https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/2025Drivers/bortoleto.jpg",
+    "trend": [0, 0, 0, 0, 0, 2, 2, 3, 4]
+  },
+  {
+    "rank": 20, "prev": 20, "code": "HAD", "name": "伊森·哈多克",
+    "nat": "美国", "flag": "🇺🇸",
+    "team": "RB", "tname": "维萨 RB",
+    "wins": 0, "podiums": 0, "pts": 2, "color": "#4455AA",
+    "img": "https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/2025Drivers/hadjar.jpg",
+    "trend": [0, 0, 0, 0, 0, 0, 0, 1, 2]
+  },
+  {
+    "rank": 21, "prev": 21, "code": "COL", "name": "弗兰科·科拉皮诺托",
+    "nat": "意大利", "flag": "🇮🇹",
+    "team": "Williams", "tname": "威廉姆斯",
+    "wins": 0, "podiums": 0, "pts": 1, "color": "#0033BB",
+    "img": "https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/2025Drivers/colapinto.jpg",
+    "trend": [0, 0, 0, 0, 0, 0, 0, 0, 1]
+  },
+  {
+    "rank": 22, "prev": 22, "code": "FIT", "name": "安东尼·杰弗里森",
+    "nat": "巴西", "flag": "🇧🇷",
+    "team": "Aston Martin", "tname": "阿斯顿·马丁",
+    "wins": 0, "podiums": 0, "pts": 0, "color": "#004F46",
+    "img": "https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/2025Drivers/fittipaldi.jpg",
+    "trend": [0, 0, 0, 0, 0, 0, 0, 0, 0]
+  }
+]

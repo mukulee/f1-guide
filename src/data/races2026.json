@@ -1,0 +1,1179 @@
+[
+  {
+    "round": 1,
+    "id": "r01",
+    "name": "澳大利亚大奖赛",
+    "circuit": "艾伯特公园赛道",
+    "location": "Melbourne",
+    "country": "Australia",
+    "flag": "https://flagcdn.com/w40/au.png",
+    "dates": "2026-03-08",
+    "raceDate": "2026-03-08T04:00:00Z",
+    "status": "completed",
+    "trackLength": "5.278 km",
+    "laps": 58,
+    "lapRecord": "1:20.235",
+    "recordHolder": "勒克莱尔",
+    "podium": [
+      {
+        "pos": 1,
+        "driver": "罗素",
+        "team": "梅赛德斯",
+        "points": "25 分"
+      },
+      {
+        "pos": 2,
+        "driver": "安东内利",
+        "team": "梅赛德斯",
+        "points": "18 分"
+      },
+      {
+        "pos": 3,
+        "driver": "勒克莱尔",
+        "team": "法拉利",
+        "points": "15 分"
+      }
+    ],
+    "fastestLap": {
+      "driver": "max_verstappen",
+      "time": "1:22.091",
+      "lap": 43
+    },
+    "sessions": [
+      {
+        "name": "自由练习赛 1",
+        "day": "周五",
+        "time": "09:30"
+      },
+      {
+        "name": "自由练习赛 2",
+        "day": "周五",
+        "time": "13:00"
+      },
+      {
+        "name": "自由练习赛 3",
+        "day": "周六",
+        "time": "09:30"
+      },
+      {
+        "name": "排位赛",
+        "day": "周六",
+        "time": "13:00",
+        "highlight": true
+      },
+      {
+        "name": "正赛",
+        "day": "周日",
+        "time": "12:00",
+        "highlight": true,
+        "isRace": true
+      }
+    ]
+  },
+  {
+    "round": 2,
+    "id": "r02",
+    "name": "中国大奖赛",
+    "circuit": "上海国际赛道",
+    "location": "Shanghai",
+    "country": "China",
+    "flag": "https://flagcdn.com/w40/cn.png",
+    "dates": "2026-03-15",
+    "raceDate": "2026-03-15T07:00:00Z",
+    "status": "completed",
+    "trackLength": "5.451 km",
+    "laps": 56,
+    "lapRecord": "1:32.238",
+    "recordHolder": "诺里斯",
+    "podium": [
+      {
+        "pos": 1,
+        "driver": "安东内利",
+        "team": "梅赛德斯",
+        "points": "25 分"
+      },
+      {
+        "pos": 2,
+        "driver": "罗素",
+        "team": "梅赛德斯",
+        "points": "18 分"
+      },
+      {
+        "pos": 3,
+        "driver": "汉密尔顿",
+        "team": "法拉利",
+        "points": "15 分"
+      }
+    ],
+    "fastestLap": {
+      "driver": "安东内利",
+      "time": "1:35.275",
+      "lap": 52
+    },
+    "sessions": [
+      {
+        "name": "自由练习赛 1",
+        "day": "周五",
+        "time": "11:30"
+      },
+      {
+        "name": "冲刺排位赛",
+        "day": "周五",
+        "time": "15:30"
+      },
+      {
+        "name": "冲刺赛",
+        "day": "周六",
+        "time": "11:00",
+        "highlight": true
+      },
+      {
+        "name": "排位赛",
+        "day": "周六",
+        "time": "15:00",
+        "highlight": true
+      },
+      {
+        "name": "正赛",
+        "day": "周日",
+        "time": "15:00",
+        "highlight": true,
+        "isRace": true
+      }
+    ]
+  },
+  {
+    "round": 3,
+    "id": "r03",
+    "name": "日本大奖赛",
+    "circuit": "铃鹿赛道",
+    "location": "Suzuka",
+    "country": "Japan",
+    "flag": "https://flagcdn.com/w40/jp.png",
+    "dates": "2026-03-29",
+    "raceDate": "2026-03-29T05:00:00Z",
+    "status": "completed",
+    "trackLength": "5.807 km",
+    "laps": 53,
+    "lapRecord": "1:30.983",
+    "recordHolder": "汉密尔顿",
+    "podium": [
+      {
+        "pos": 1,
+        "driver": "安东内利",
+        "team": "梅赛德斯",
+        "points": "25 分"
+      },
+      {
+        "pos": 2,
+        "driver": "皮亚斯特里",
+        "team": "迈凯轮",
+        "points": "18 分"
+      },
+      {
+        "pos": 3,
+        "driver": "勒克莱尔",
+        "team": "法拉利",
+        "points": "15 分"
+      }
+    ],
+    "fastestLap": {
+      "driver": "安东内利",
+      "time": "1:32.432",
+      "lap": 49
+    },
+    "sessions": [
+      {
+        "name": "自由练习赛 1",
+        "day": "周五",
+        "time": "10:30"
+      },
+      {
+        "name": "自由练习赛 2",
+        "day": "周五",
+        "time": "14:00"
+      },
+      {
+        "name": "自由练习赛 3",
+        "day": "周六",
+        "time": "10:30"
+      },
+      {
+        "name": "排位赛",
+        "day": "周六",
+        "time": "14:00",
+        "highlight": true
+      },
+      {
+        "name": "正赛",
+        "day": "周日",
+        "time": "13:00",
+        "highlight": true,
+        "isRace": true
+      }
+    ]
+  },
+  {
+    "round": 4,
+    "id": "r04",
+    "name": "迈阿密大奖赛",
+    "circuit": "迈阿密国际赛道",
+    "location": "Miami",
+    "country": "USA",
+    "flag": "https://flagcdn.com/w40/us.png",
+    "dates": "2026-05-03",
+    "raceDate": "2026-05-03T20:00:00Z",
+    "status": "completed",
+    "trackLength": "5.412 km",
+    "laps": 57,
+    "lapRecord": "1:26.841",
+    "recordHolder": "维斯塔潘",
+    "podium": [
+      {
+        "pos": 1,
+        "driver": "安东内利",
+        "team": "梅赛德斯",
+        "points": "25 分"
+      },
+      {
+        "pos": 2,
+        "driver": "诺里斯",
+        "team": "迈凯轮",
+        "points": "18 分"
+      },
+      {
+        "pos": 3,
+        "driver": "皮亚斯特里",
+        "team": "迈凯轮",
+        "points": "15 分"
+      }
+    ],
+    "fastestLap": {
+      "driver": "诺里斯",
+      "time": "1:31.869",
+      "lap": 35
+    },
+    "sessions": [
+      {
+        "name": "自由练习赛 1",
+        "day": "周五",
+        "time": "00:00"
+      },
+      {
+        "name": "冲刺排位赛",
+        "day": "周五",
+        "time": "04:30"
+      },
+      {
+        "name": "冲刺赛",
+        "day": "周六",
+        "time": "00:00",
+        "highlight": true
+      },
+      {
+        "name": "排位赛",
+        "day": "周六",
+        "time": "04:00",
+        "highlight": true
+      },
+      {
+        "name": "正赛",
+        "day": "周日",
+        "time": "04:00",
+        "highlight": true,
+        "isRace": true
+      }
+    ]
+  },
+  {
+    "round": 5,
+    "id": "r05",
+    "name": "加拿大大奖赛",
+    "circuit": "吉尔·维伦纽夫赛道",
+    "location": "Montreal",
+    "country": "Canada",
+    "flag": "https://flagcdn.com/w40/ca.png",
+    "dates": "2026-05-24",
+    "raceDate": "2026-05-24T20:00:00Z",
+    "status": "completed",
+    "trackLength": "4.361 km",
+    "laps": 70,
+    "lapRecord": "1:13.078",
+    "recordHolder": "维斯塔潘",
+    "podium": [
+      {
+        "pos": 1,
+        "driver": "安东内利",
+        "team": "梅赛德斯",
+        "points": "25 分"
+      },
+      {
+        "pos": 2,
+        "driver": "汉密尔顿",
+        "team": "法拉利",
+        "points": "18 分"
+      },
+      {
+        "pos": 3,
+        "driver": "max_verstappen",
+        "team": "红牛",
+        "points": "15 分"
+      }
+    ],
+    "fastestLap": {
+      "driver": "安东内利",
+      "time": "1:14.210",
+      "lap": 68
+    },
+    "sessions": [
+      {
+        "name": "自由练习赛 1",
+        "day": "周五",
+        "time": "00:30"
+      },
+      {
+        "name": "冲刺排位赛",
+        "day": "周五",
+        "time": "04:30"
+      },
+      {
+        "name": "冲刺赛",
+        "day": "周六",
+        "time": "00:00",
+        "highlight": true
+      },
+      {
+        "name": "排位赛",
+        "day": "周六",
+        "time": "04:00",
+        "highlight": true
+      },
+      {
+        "name": "正赛",
+        "day": "周日",
+        "time": "04:00",
+        "highlight": true,
+        "isRace": true
+      }
+    ]
+  },
+  {
+    "round": 6,
+    "id": "r06",
+    "name": "摩纳哥大奖赛",
+    "circuit": "摩纳哥街道赛道",
+    "location": "Monte Carlo",
+    "country": "Monaco",
+    "flag": "https://flagcdn.com/w40/mc.png",
+    "dates": "2026-06-07",
+    "raceDate": "2026-06-07T13:00:00Z",
+    "status": "next",
+    "trackLength": "3.337 km",
+    "laps": 78,
+    "lapRecord": "1:12.909",
+    "recordHolder": "勒克莱尔",
+    "podium": null,
+    "fastestLap": null,
+    "sessions": [
+      {
+        "name": "自由练习赛 1",
+        "day": "周五",
+        "time": "19:30"
+      },
+      {
+        "name": "自由练习赛 2",
+        "day": "周五",
+        "time": "23:00"
+      },
+      {
+        "name": "自由练习赛 3",
+        "day": "周六",
+        "time": "18:30"
+      },
+      {
+        "name": "排位赛",
+        "day": "周六",
+        "time": "22:00",
+        "highlight": true
+      },
+      {
+        "name": "正赛",
+        "day": "周日",
+        "time": "21:00",
+        "highlight": true,
+        "isRace": true
+      }
+    ]
+  },
+  {
+    "round": 7,
+    "id": "r07",
+    "name": "巴塞罗那大奖赛",
+    "circuit": "加泰罗尼亚赛道",
+    "location": "Barcelona",
+    "country": "Spain",
+    "flag": "https://flagcdn.com/w40/es.png",
+    "dates": "2026-06-14",
+    "raceDate": "2026-06-14T13:00:00Z",
+    "status": "upcoming",
+    "trackLength": "4.657 km",
+    "laps": 66,
+    "lapRecord": "1:16.330",
+    "recordHolder": "维斯塔潘",
+    "podium": null,
+    "fastestLap": null,
+    "sessions": [
+      {
+        "name": "自由练习赛 1",
+        "day": "周五",
+        "time": "19:30"
+      },
+      {
+        "name": "自由练习赛 2",
+        "day": "周五",
+        "time": "23:00"
+      },
+      {
+        "name": "自由练习赛 3",
+        "day": "周六",
+        "time": "18:30"
+      },
+      {
+        "name": "排位赛",
+        "day": "周六",
+        "time": "22:00",
+        "highlight": true
+      },
+      {
+        "name": "正赛",
+        "day": "周日",
+        "time": "21:00",
+        "highlight": true,
+        "isRace": true
+      }
+    ]
+  },
+  {
+    "round": 8,
+    "id": "r08",
+    "name": "奥地利大奖赛",
+    "circuit": "红牛环赛道",
+    "location": "Spielberg",
+    "country": "Austria",
+    "flag": "https://flagcdn.com/w40/at.png",
+    "dates": "2026-06-28",
+    "raceDate": "2026-06-28T13:00:00Z",
+    "status": "upcoming",
+    "trackLength": "4.318 km",
+    "laps": 71,
+    "lapRecord": "1:05.619",
+    "recordHolder": "维斯塔潘",
+    "podium": null,
+    "fastestLap": null,
+    "sessions": [
+      {
+        "name": "自由练习赛 1",
+        "day": "周五",
+        "time": "19:30"
+      },
+      {
+        "name": "自由练习赛 2",
+        "day": "周五",
+        "time": "23:00"
+      },
+      {
+        "name": "自由练习赛 3",
+        "day": "周六",
+        "time": "18:30"
+      },
+      {
+        "name": "排位赛",
+        "day": "周六",
+        "time": "22:00",
+        "highlight": true
+      },
+      {
+        "name": "正赛",
+        "day": "周日",
+        "time": "21:00",
+        "highlight": true,
+        "isRace": true
+      }
+    ]
+  },
+  {
+    "round": 9,
+    "id": "r09",
+    "name": "英国大奖赛",
+    "circuit": "银石赛道",
+    "location": "Silverstone",
+    "country": "UK",
+    "flag": "https://flagcdn.com/w40/gb.png",
+    "dates": "2026-07-05",
+    "raceDate": "2026-07-05T14:00:00Z",
+    "status": "upcoming",
+    "trackLength": "5.891 km",
+    "laps": 52,
+    "lapRecord": "1:27.097",
+    "recordHolder": "汉密尔顿",
+    "podium": null,
+    "fastestLap": null,
+    "sessions": [
+      {
+        "name": "自由练习赛 1",
+        "day": "周五",
+        "time": "19:30"
+      },
+      {
+        "name": "冲刺排位赛",
+        "day": "周五",
+        "time": "23:30"
+      },
+      {
+        "name": "冲刺赛",
+        "day": "周六",
+        "time": "19:00",
+        "highlight": true
+      },
+      {
+        "name": "排位赛",
+        "day": "周六",
+        "time": "23:00",
+        "highlight": true
+      },
+      {
+        "name": "正赛",
+        "day": "周日",
+        "time": "22:00",
+        "highlight": true,
+        "isRace": true
+      }
+    ]
+  },
+  {
+    "round": 10,
+    "id": "r10",
+    "name": "比利时大奖赛",
+    "circuit": "斯帕-法兰科尔尚赛道",
+    "location": "Spa",
+    "country": "Belgium",
+    "flag": "https://flagcdn.com/w40/be.png",
+    "dates": "2026-07-19",
+    "raceDate": "2026-07-19T13:00:00Z",
+    "status": "upcoming",
+    "trackLength": "7.004 km",
+    "laps": 44,
+    "lapRecord": "1:46.286",
+    "recordHolder": "维斯塔潘",
+    "podium": null,
+    "fastestLap": null,
+    "sessions": [
+      {
+        "name": "自由练习赛 1",
+        "day": "周五",
+        "time": "19:30"
+      },
+      {
+        "name": "自由练习赛 2",
+        "day": "周五",
+        "time": "23:00"
+      },
+      {
+        "name": "自由练习赛 3",
+        "day": "周六",
+        "time": "18:30"
+      },
+      {
+        "name": "排位赛",
+        "day": "周六",
+        "time": "22:00",
+        "highlight": true
+      },
+      {
+        "name": "正赛",
+        "day": "周日",
+        "time": "21:00",
+        "highlight": true,
+        "isRace": true
+      }
+    ]
+  },
+  {
+    "round": 11,
+    "id": "r11",
+    "name": "匈牙利大奖赛",
+    "circuit": "匈牙利赛道",
+    "location": "Budapest",
+    "country": "Hungary",
+    "flag": "https://flagcdn.com/w40/hu.png",
+    "dates": "2026-07-26",
+    "raceDate": "2026-07-26T13:00:00Z",
+    "status": "upcoming",
+    "trackLength": "4.381 km",
+    "laps": 70,
+    "lapRecord": "1:16.627",
+    "recordHolder": "汉密尔顿",
+    "podium": null,
+    "fastestLap": null,
+    "sessions": [
+      {
+        "name": "自由练习赛 1",
+        "day": "周五",
+        "time": "19:30"
+      },
+      {
+        "name": "自由练习赛 2",
+        "day": "周五",
+        "time": "23:00"
+      },
+      {
+        "name": "自由练习赛 3",
+        "day": "周六",
+        "time": "18:30"
+      },
+      {
+        "name": "排位赛",
+        "day": "周六",
+        "time": "22:00",
+        "highlight": true
+      },
+      {
+        "name": "正赛",
+        "day": "周日",
+        "time": "21:00",
+        "highlight": true,
+        "isRace": true
+      }
+    ]
+  },
+  {
+    "round": 12,
+    "id": "r12",
+    "name": "荷兰大奖赛",
+    "circuit": "Circuit Park Zandvoort",
+    "location": "Zandvoort",
+    "country": "Netherlands",
+    "flag": "https://flagcdn.com/w40/nl.png",
+    "dates": "2026-08-23",
+    "raceDate": "2026-08-23T13:00:00Z",
+    "status": "upcoming",
+    "trackLength": "4.259 km",
+    "laps": 72,
+    "lapRecord": "1:11.097",
+    "recordHolder": "维斯塔潘",
+    "podium": null,
+    "fastestLap": null,
+    "sessions": [
+      {
+        "name": "自由练习赛 1",
+        "day": "周五",
+        "time": "18:30"
+      },
+      {
+        "name": "冲刺排位赛",
+        "day": "周五",
+        "time": "22:30"
+      },
+      {
+        "name": "冲刺赛",
+        "day": "周六",
+        "time": "18:00",
+        "highlight": true
+      },
+      {
+        "name": "排位赛",
+        "day": "周六",
+        "time": "22:00",
+        "highlight": true
+      },
+      {
+        "name": "正赛",
+        "day": "周日",
+        "time": "21:00",
+        "highlight": true,
+        "isRace": true
+      }
+    ]
+  },
+  {
+    "round": 13,
+    "id": "r13",
+    "name": "意大利大奖赛",
+    "circuit": "蒙扎赛道",
+    "location": "Monza",
+    "country": "Italy",
+    "flag": "https://flagcdn.com/w40/it.png",
+    "dates": "2026-09-06",
+    "raceDate": "2026-09-06T13:00:00Z",
+    "status": "upcoming",
+    "trackLength": "5.793 km",
+    "laps": 53,
+    "lapRecord": "1:21.046",
+    "recordHolder": "维斯塔潘",
+    "podium": null,
+    "fastestLap": null,
+    "sessions": [
+      {
+        "name": "自由练习赛 1",
+        "day": "周五",
+        "time": "18:30"
+      },
+      {
+        "name": "自由练习赛 2",
+        "day": "周五",
+        "time": "22:00"
+      },
+      {
+        "name": "自由练习赛 3",
+        "day": "周六",
+        "time": "18:30"
+      },
+      {
+        "name": "排位赛",
+        "day": "周六",
+        "time": "22:00",
+        "highlight": true
+      },
+      {
+        "name": "正赛",
+        "day": "周日",
+        "time": "21:00",
+        "highlight": true,
+        "isRace": true
+      }
+    ]
+  },
+  {
+    "round": 14,
+    "id": "r14",
+    "name": "西班牙大奖赛",
+    "circuit": "Madring",
+    "location": "Madrid",
+    "country": "Spain",
+    "flag": "https://flagcdn.com/w40/es.png",
+    "dates": "2026-09-13",
+    "raceDate": "2026-09-13T13:00:00Z",
+    "status": "upcoming",
+    "trackLength": "5.474 km",
+    "laps": 55,
+    "lapRecord": "—",
+    "recordHolder": "—",
+    "podium": null,
+    "fastestLap": null,
+    "sessions": [
+      {
+        "name": "自由练习赛 1",
+        "day": "周五",
+        "time": "19:30"
+      },
+      {
+        "name": "自由练习赛 2",
+        "day": "周五",
+        "time": "23:00"
+      },
+      {
+        "name": "自由练习赛 3",
+        "day": "周六",
+        "time": "18:30"
+      },
+      {
+        "name": "排位赛",
+        "day": "周六",
+        "time": "22:00",
+        "highlight": true
+      },
+      {
+        "name": "正赛",
+        "day": "周日",
+        "time": "21:00",
+        "highlight": true,
+        "isRace": true
+      }
+    ]
+  },
+  {
+    "round": 15,
+    "id": "r15",
+    "name": "阿塞拜疆大奖赛",
+    "circuit": "巴库市区赛道",
+    "location": "Baku",
+    "country": "Azerbaijan",
+    "flag": "https://flagcdn.com/w40/az.png",
+    "dates": "2026-09-26",
+    "raceDate": "2026-09-26T11:00:00Z",
+    "status": "upcoming",
+    "trackLength": "6.003 km",
+    "laps": 51,
+    "lapRecord": "1:43.009",
+    "recordHolder": "维斯塔潘",
+    "podium": null,
+    "fastestLap": null,
+    "sessions": [
+      {
+        "name": "自由练习赛 1",
+        "day": "周四",
+        "time": "16:30"
+      },
+      {
+        "name": "自由练习赛 2",
+        "day": "周四",
+        "time": "20:00"
+      },
+      {
+        "name": "自由练习赛 3",
+        "day": "周五",
+        "time": "16:30"
+      },
+      {
+        "name": "排位赛",
+        "day": "周五",
+        "time": "20:00",
+        "highlight": true
+      },
+      {
+        "name": "正赛",
+        "day": "周六",
+        "time": "19:00",
+        "highlight": true,
+        "isRace": true
+      }
+    ]
+  },
+  {
+    "round": 16,
+    "id": "r16",
+    "name": "新加坡大奖赛",
+    "circuit": "滨海湾街道赛道",
+    "location": "Marina Bay",
+    "country": "Singapore",
+    "flag": "https://flagcdn.com/w40/sg.png",
+    "dates": "2026-10-11",
+    "raceDate": "2026-10-11T12:00:00Z",
+    "status": "upcoming",
+    "trackLength": "4.940 km",
+    "laps": 62,
+    "lapRecord": "1:35.867",
+    "recordHolder": "维斯塔潘",
+    "podium": null,
+    "fastestLap": null,
+    "sessions": [
+      {
+        "name": "自由练习赛 1",
+        "day": "周五",
+        "time": "16:30"
+      },
+      {
+        "name": "冲刺排位赛",
+        "day": "周五",
+        "time": "20:30"
+      },
+      {
+        "name": "冲刺赛",
+        "day": "周六",
+        "time": "17:00",
+        "highlight": true
+      },
+      {
+        "name": "排位赛",
+        "day": "周六",
+        "time": "21:00",
+        "highlight": true
+      },
+      {
+        "name": "正赛",
+        "day": "周日",
+        "time": "20:00",
+        "highlight": true,
+        "isRace": true
+      }
+    ]
+  },
+  {
+    "round": 17,
+    "id": "r17",
+    "name": "美国大奖赛",
+    "circuit": "美洲赛道",
+    "location": "Austin",
+    "country": "USA",
+    "flag": "https://flagcdn.com/w40/us.png",
+    "dates": "2026-10-25",
+    "raceDate": "2026-10-25T20:00:00Z",
+    "status": "upcoming",
+    "trackLength": "5.513 km",
+    "laps": 56,
+    "lapRecord": "1:36.169",
+    "recordHolder": "维斯塔潘",
+    "podium": null,
+    "fastestLap": null,
+    "sessions": [
+      {
+        "name": "自由练习赛 1",
+        "day": "周五",
+        "time": "01:30"
+      },
+      {
+        "name": "自由练习赛 2",
+        "day": "周五",
+        "time": "05:00"
+      },
+      {
+        "name": "自由练习赛 3",
+        "day": "周六",
+        "time": "01:30"
+      },
+      {
+        "name": "排位赛",
+        "day": "周六",
+        "time": "05:00",
+        "highlight": true
+      },
+      {
+        "name": "正赛",
+        "day": "周日",
+        "time": "04:00",
+        "highlight": true,
+        "isRace": true
+      }
+    ]
+  },
+  {
+    "round": 18,
+    "id": "r18",
+    "name": "墨西哥城大奖赛",
+    "circuit": "Autódromo Hermanos Rodríguez",
+    "location": "Mexico City",
+    "country": "Mexico",
+    "flag": "https://flagcdn.com/w40/mx.png",
+    "dates": "2026-11-01",
+    "raceDate": "2026-11-01T20:00:00Z",
+    "status": "upcoming",
+    "trackLength": "4.304 km",
+    "laps": 71,
+    "lapRecord": "1:17.774",
+    "recordHolder": "汉密尔顿",
+    "podium": null,
+    "fastestLap": null,
+    "sessions": [
+      {
+        "name": "自由练习赛 1",
+        "day": "周五",
+        "time": "02:30"
+      },
+      {
+        "name": "自由练习赛 2",
+        "day": "周五",
+        "time": "06:00"
+      },
+      {
+        "name": "自由练习赛 3",
+        "day": "周六",
+        "time": "01:30"
+      },
+      {
+        "name": "排位赛",
+        "day": "周六",
+        "time": "05:00",
+        "highlight": true
+      },
+      {
+        "name": "正赛",
+        "day": "周日",
+        "time": "04:00",
+        "highlight": true,
+        "isRace": true
+      }
+    ]
+  },
+  {
+    "round": 19,
+    "id": "r19",
+    "name": "巴西大奖赛",
+    "circuit": "Autódromo José Carlos Pace",
+    "location": "São Paulo",
+    "country": "Brazil",
+    "flag": "https://flagcdn.com/w40/br.png",
+    "dates": "2026-11-08",
+    "raceDate": "2026-11-08T17:00:00Z",
+    "status": "upcoming",
+    "trackLength": "4.309 km",
+    "laps": 71,
+    "lapRecord": "1:10.540",
+    "recordHolder": "维斯塔潘",
+    "podium": null,
+    "fastestLap": null,
+    "sessions": [
+      {
+        "name": "自由练习赛 1",
+        "day": "周五",
+        "time": "23:30"
+      },
+      {
+        "name": "自由练习赛 2",
+        "day": "周五",
+        "time": "03:00"
+      },
+      {
+        "name": "自由练习赛 3",
+        "day": "周六",
+        "time": "22:30"
+      },
+      {
+        "name": "排位赛",
+        "day": "周六",
+        "time": "02:00",
+        "highlight": true
+      },
+      {
+        "name": "正赛",
+        "day": "周日",
+        "time": "01:00",
+        "highlight": true,
+        "isRace": true
+      }
+    ]
+  },
+  {
+    "round": 20,
+    "id": "r20",
+    "name": "拉斯维加斯大奖赛",
+    "circuit": "Las Vegas Strip Street Circuit",
+    "location": "Las Vegas",
+    "country": "USA",
+    "flag": "https://flagcdn.com/w40/us.png",
+    "dates": "2026-11-22",
+    "raceDate": "2026-11-22T04:00:00Z",
+    "status": "upcoming",
+    "trackLength": "6.201 km",
+    "laps": 50,
+    "lapRecord": "1:35.490",
+    "recordHolder": "勒克莱尔",
+    "podium": null,
+    "fastestLap": null,
+    "sessions": [
+      {
+        "name": "自由练习赛 1",
+        "day": "周五",
+        "time": "08:30"
+      },
+      {
+        "name": "自由练习赛 2",
+        "day": "周五",
+        "time": "12:00"
+      },
+      {
+        "name": "自由练习赛 3",
+        "day": "周六",
+        "time": "08:30"
+      },
+      {
+        "name": "排位赛",
+        "day": "周六",
+        "time": "12:00",
+        "highlight": true
+      },
+      {
+        "name": "正赛",
+        "day": "周日",
+        "time": "12:00",
+        "highlight": true,
+        "isRace": true
+      }
+    ]
+  },
+  {
+    "round": 21,
+    "id": "r21",
+    "name": "卡塔尔大奖赛",
+    "circuit": "卢塞尔国际赛道",
+    "location": "Lusail",
+    "country": "Qatar",
+    "flag": "https://flagcdn.com/w40/qa.png",
+    "dates": "2026-11-29",
+    "raceDate": "2026-11-29T16:00:00Z",
+    "status": "upcoming",
+    "trackLength": "5.380 km",
+    "laps": 57,
+    "lapRecord": "1:24.319",
+    "recordHolder": "诺里斯",
+    "podium": null,
+    "fastestLap": null,
+    "sessions": [
+      {
+        "name": "自由练习赛 1",
+        "day": "周五",
+        "time": "21:30"
+      },
+      {
+        "name": "自由练习赛 2",
+        "day": "周五",
+        "time": "01:00"
+      },
+      {
+        "name": "自由练习赛 3",
+        "day": "周六",
+        "time": "22:30"
+      },
+      {
+        "name": "排位赛",
+        "day": "周六",
+        "time": "02:00",
+        "highlight": true
+      },
+      {
+        "name": "正赛",
+        "day": "周日",
+        "time": "00:00",
+        "highlight": true,
+        "isRace": true
+      }
+    ]
+  },
+  {
+    "round": 22,
+    "id": "r22",
+    "name": "阿布扎比大奖赛",
+    "circuit": "亚斯码头赛道",
+    "location": "Abu Dhabi",
+    "country": "UAE",
+    "flag": "https://flagcdn.com/w40/ae.png",
+    "dates": "2026-12-06",
+    "raceDate": "2026-12-06T13:00:00Z",
+    "status": "upcoming",
+    "trackLength": "5.281 km",
+    "laps": 58,
+    "lapRecord": "1:26.103",
+    "recordHolder": "汉密尔顿",
+    "podium": null,
+    "fastestLap": null,
+    "sessions": [
+      {
+        "name": "自由练习赛 1",
+        "day": "周五",
+        "time": "17:30"
+      },
+      {
+        "name": "自由练习赛 2",
+        "day": "周五",
+        "time": "21:00"
+      },
+      {
+        "name": "自由练习赛 3",
+        "day": "周六",
+        "time": "18:30"
+      },
+      {
+        "name": "排位赛",
+        "day": "周六",
+        "time": "22:00",
+        "highlight": true
+      },
+      {
+        "name": "正赛",
+        "day": "周日",
+        "time": "21:00",
+        "highlight": true,
+        "isRace": true
+      }
+    ]
+  }
+]

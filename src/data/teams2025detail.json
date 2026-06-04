@@ -1,0 +1,212 @@
+[
+  {
+    "id": "mclaren", "rank": 1,
+    "name": "迈凯伦车队", "tag": "McLAREN F1 TEAM",
+    "color": "#FF8700",
+    "logo": "https://media.formula1.com/content/dam/fom-website/teams/2025/mclaren-logo.png",
+    "chassis": "MCL39", "engine": "Mercedes",
+    "base": "沃金, 英国", "principal": "安德烈亚·斯特拉",
+    "pts": 366, "wins": 2,
+    "drivers": [
+      { "num": 4,  "name": "兰多·诺里斯",       "initials": "NOR", "img": "https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/2025Drivers/norris.jpg" },
+      { "num": 81, "name": "奥斯卡·皮亚斯特里",  "initials": "PIA", "img": "https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/2025Drivers/piastri.jpg" }
+    ],
+    "desc": "迈凯伦是 F1 历史上最成功的车队之一，成立于 1963 年。近年在诺里斯和皮亚斯特里的带领下重回巅峰，2024 赛季赢得车队冠军，2025 赛季继续强势领跑。",
+    "titles": { "driver": 9, "constructor": 9, "wins": 186 },
+    "history": [
+      { "y": 2025, "pos": "P1", "pts": 366, "w": 2 },
+      { "y": 2024, "pos": "P1", "pts": 666, "w": 6 },
+      { "y": 2023, "pos": "P4", "pts": 302, "w": 2 },
+      { "y": 2022, "pos": "P5", "pts": 159, "w": 0 }
+    ]
+  },
+  {
+    "id": "ferrari", "rank": 2,
+    "name": "法拉利车队", "tag": "SCUDERIA FERRARI HP",
+    "color": "#DC0000",
+    "logo": "https://media.formula1.com/content/dam/fom-website/teams/2025/ferrari-logo.png",
+    "chassis": "SF-25", "engine": "Ferrari",
+    "base": "马拉内罗, 意大利", "principal": "弗雷德里克·瓦瑟尔",
+    "pts": 274, "wins": 2,
+    "drivers": [
+      { "num": 16, "name": "夏尔·勒克莱尔",     "initials": "LEC", "img": "https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/2025Drivers/leclerc.jpg" },
+      { "num": 44, "name": "刘易斯·汉密尔顿",    "initials": "HAM", "img": "https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/2025Drivers/hamilton.jpg" }
+    ],
+    "desc": "法拉利是 F1 历史上最古老的车队，1950 年首届世界锦标赛起便参赛至今。凭借 16 届车手冠军与 16 届车队冠军，跻身史上最成功车队之列。",
+    "titles": { "driver": 15, "constructor": 16, "wins": 243 },
+    "history": [
+      { "y": 2025, "pos": "P2", "pts": 274, "w": 2 },
+      { "y": 2024, "pos": "P2", "pts": 652, "w": 5 },
+      { "y": 2023, "pos": "P3", "pts": 406, "w": 1 },
+      { "y": 2022, "pos": "P2", "pts": 554, "w": 4 }
+    ]
+  },
+  {
+    "id": "mercedes", "rank": 3,
+    "name": "梅赛德斯-奔驰 AMG", "tag": "MERCEDES-AMG PETRONAS",
+    "color": "#00D2BE",
+    "logo": "https://media.formula1.com/content/dam/fom-website/teams/2025/mercedes-logo.png",
+    "chassis": "W16", "engine": "Mercedes",
+    "base": "布拉克利, 英国", "principal": "托托·沃尔夫",
+    "pts": 295, "wins": 1,
+    "drivers": [
+      { "num": 63, "name": "乔治·拉塞尔",         "initials": "RUS", "img": "https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/2025Drivers/russell.jpg" },
+      { "num": 12, "name": "安德烈亚·基米·安东内利","initials": "ANT", "img": "https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/2025Drivers/antonelli.jpg" }
+    ],
+    "desc": "梅赛德斯在 2014–2021 年打造了 F1 史上最强王朝，连续 8 年包揽车队冠军。2025 年在拉塞尔与新秀安东内利的组合下强势回归前三。",
+    "titles": { "driver": 7, "constructor": 8, "wins": 125 },
+    "history": [
+      { "y": 2025, "pos": "P3", "pts": 295, "w": 1 },
+      { "y": 2024, "pos": "P4", "pts": 468, "w": 4 },
+      { "y": 2023, "pos": "P2", "pts": 409, "w": 0 },
+      { "y": 2022, "pos": "P3", "pts": 515, "w": 1 }
+    ]
+  },
+  {
+    "id": "redbull", "rank": 4,
+    "name": "红牛车队", "tag": "ORACLE RED BULL RACING",
+    "color": "#3671C6",
+    "logo": "https://media.formula1.com/content/dam/fom-website/teams/2025/red-bull-racing-logo.png",
+    "chassis": "RB21", "engine": "Honda RBPT",
+    "base": "米尔顿凯恩斯, 英国", "principal": "克里斯蒂安·霍纳",
+    "pts": 186, "wins": 7,
+    "drivers": [
+      { "num": 1,  "name": "马克斯·维斯塔潘",  "initials": "VER", "img": "https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/2025Drivers/verstappen.jpg" },
+      { "num": 30, "name": "利亚姆·劳森",       "initials": "LAW", "img": "https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/2025Drivers/lawson.jpg" }
+    ],
+    "desc": "红牛近年的统治力令人叹为观止：2021–2023 年包揽四届车手冠军与三届车队冠军。2025 年因维斯塔潘的绝对统治力仍保持顶级竞争力。",
+    "titles": { "driver": 6, "constructor": 6, "wins": 119 },
+    "history": [
+      { "y": 2025, "pos": "P4", "pts": 186, "w": 7 },
+      { "y": 2024, "pos": "P3", "pts": 589, "w": 7 },
+      { "y": 2023, "pos": "P1", "pts": 860, "w": 21 },
+      { "y": 2022, "pos": "P1", "pts": 759, "w": 17 }
+    ]
+  },
+  {
+    "id": "aston", "rank": 5,
+    "name": "阿斯顿·马丁车队", "tag": "ASTON MARTIN ARAMCO F1",
+    "color": "#006F62",
+    "logo": "https://media.formula1.com/content/dam/fom-website/teams/2025/aston-martin-logo.png",
+    "chassis": "AMR25", "engine": "Mercedes",
+    "base": "西尔弗斯通, 英国", "principal": "迈克·克拉克",
+    "pts": 53, "wins": 0,
+    "drivers": [
+      { "num": 14, "name": "费尔南多·阿隆索",  "initials": "ALO", "img": "https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/2025Drivers/alonso.jpg" },
+      { "num": 18, "name": "兰斯·斯特罗尔",    "initials": "STR", "img": "https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/2025Drivers/stroll.jpg" }
+    ],
+    "desc": "阿斯顿·马丁近年在劳伦斯·斯特罗尔的大力投入下迅速成长，2023 赛季凭借 AMR23 强势打入前四，阿隆索更多次登上领奖台。",
+    "titles": { "driver": 0, "constructor": 0, "wins": 0 },
+    "history": [
+      { "y": 2025, "pos": "P5", "pts": 53, "w": 0 },
+      { "y": 2024, "pos": "P5", "pts": 94, "w": 0 },
+      { "y": 2023, "pos": "P5", "pts": 280, "w": 0 },
+      { "y": 2022, "pos": "P7", "pts": 55, "w": 0 }
+    ]
+  },
+  {
+    "id": "alpine", "rank": 6,
+    "name": "Alpine 车队", "tag": "BWT ALPINE F1 TEAM",
+    "color": "#0090FF",
+    "logo": "https://media.formula1.com/content/dam/fom-website/teams/2025/alpine-logo.png",
+    "chassis": "A525", "engine": "Renault",
+    "base": "恩斯通, 英国", "principal": "奥利弗·米纳斯",
+    "pts": 44, "wins": 0,
+    "drivers": [
+      { "num": 10, "name": "皮埃尔·加斯利",  "initials": "GAS", "img": "https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/2025Drivers/gasly.jpg" },
+      { "num": 7,  "name": "杰克·杜汉",       "initials": "DRU", "img": "https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/2025Drivers/doohan.jpg" }
+    ],
+    "desc": "Alpine 是雷诺旗下的 F1 车队，以法国的蓝白红三色为旗帜。2021 年改名后持续在中游厮杀，年轻阵容正在蓄力突破。",
+    "titles": { "driver": 2, "constructor": 0, "wins": 21 },
+    "history": [
+      { "y": 2025, "pos": "P6", "pts": 44, "w": 0 },
+      { "y": 2024, "pos": "P6", "pts": 65, "w": 0 },
+      { "y": 2023, "pos": "P6", "pts": 120, "w": 0 },
+      { "y": 2022, "pos": "P4", "pts": 173, "w": 1 }
+    ]
+  },
+  {
+    "id": "williams", "rank": 7,
+    "name": "威廉姆斯车队", "tag": "WILLIAMS RACING",
+    "color": "#005AFF",
+    "logo": "https://media.formula1.com/content/dam/fom-website/teams/2025/williams-logo.png",
+    "chassis": "FW47", "engine": "Mercedes",
+    "base": "格罗夫, 英国", "principal": "詹姆斯·沃尔斯",
+    "pts": 118, "wins": 1,
+    "drivers": [
+      { "num": 55, "name": "卡洛斯·塞恩斯",    "initials": "SAI", "img": "https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/2025Drivers/sainz.jpg" },
+      { "num": 23, "name": "亚历山大·阿尔本",   "initials": "ALB", "img": "https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/2025Drivers/albon.jpg" }
+    ],
+    "desc": "威廉姆斯是 F1 最具传奇色彩的私人车队之一，1980 年代几乎统治了整个 F1。如今在塞恩斯的带领下，2025 赛季表现超预期。",
+    "titles": { "driver": 7, "constructor": 9, "wins": 114 },
+    "history": [
+      { "y": 2025, "pos": "P7", "pts": 118, "w": 1 },
+      { "y": 2024, "pos": "P7", "pts": 51, "w": 0 },
+      { "y": 2023, "pos": "P7", "pts": 28, "w": 0 },
+      { "y": 2022, "pos": "P8", "pts": 8, "w": 0 }
+    ]
+  },
+  {
+    "id": "rb", "rank": 8,
+    "name": "Visa RB F1 车队", "tag": "VISA CASH APP RB F1 TEAM",
+    "color": "#6692FF",
+    "logo": "https://media.formula1.com/content/dam/fom-website/teams/2025/rb-logo.png",
+    "chassis": "VCARB 02", "engine": "Honda RBPT",
+    "base": "法恩, 英国", "principal": "劳伦特·梅基",
+    "pts": 25, "wins": 0,
+    "drivers": [
+      { "num": 22, "name": "角田裕毅",         "initials": "TSU", "img": "https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/2025Drivers/tsunoda.jpg" },
+      { "num": 6,  "name": "伊萨克·哈德亚尔",  "initials": "HAD", "img": "https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/2025Drivers/hadjar.jpg" }
+    ],
+    "desc": "RB 车队（前 AlphaTauri）是红牛的姊妹队，专门培育年轻车手。角田裕毅已逐步成长为 F1 中坚力量。",
+    "titles": { "driver": 0, "constructor": 0, "wins": 2 },
+    "history": [
+      { "y": 2025, "pos": "P8", "pts": 25, "w": 0 },
+      { "y": 2024, "pos": "P8", "pts": 46, "w": 0 },
+      { "y": 2023, "pos": "P8", "pts": 25, "w": 0 },
+      { "y": 2022, "pos": "P6", "pts": 35, "w": 1 }
+    ]
+  },
+  {
+    "id": "haas", "rank": 9,
+    "name": "哈斯车队", "tag": "MONEYGRAM HAAS F1 TEAM",
+    "color": "#CCCCCC",
+    "logo": "https://media.formula1.com/content/dam/fom-website/teams/2025/haas-logo.png",
+    "chassis": "VF-25", "engine": "Ferrari",
+    "base": "坎纳波利斯, 美国", "principal": "阿尤尔·卡纳万",
+    "pts": 12, "wins": 0,
+    "drivers": [
+      { "num": 31, "name": "埃斯特班·奥康",   "initials": "OCO", "img": "https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/2025Drivers/ocon.jpg" },
+      { "num": 87, "name": "奥利弗·比尔曼",   "initials": "BEA", "img": "https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/2025Drivers/bearman.jpg" }
+    ],
+    "desc": "哈斯是唯一一支总部设在美国的 F1 车队，2016 年首次参赛即拿下积分。近年在中下游苦苦挣扎，持续寻找竞争力突破口。",
+    "titles": { "driver": 0, "constructor": 0, "wins": 0 },
+    "history": [
+      { "y": 2025, "pos": "P9", "pts": 12, "w": 0 },
+      { "y": 2024, "pos": "P10", "pts": 31, "w": 0 },
+      { "y": 2023, "pos": "P8", "pts": 12, "w": 0 },
+      { "y": 2022, "pos": "P8", "pts": 37, "w": 0 }
+    ]
+  },
+  {
+    "id": "sauber", "rank": 10,
+    "name": "Kick Sauber 车队", "tag": "STAKE F1 TEAM KICK SAUBER",
+    "color": "#00D4AA",
+    "logo": "https://media.formula1.com/content/dam/fom-website/teams/2025/kick-sauber-logo.png",
+    "chassis": "C45", "engine": "Ferrari",
+    "base": "欣维尔, 瑞士", "principal": "马蒂亚·比内托",
+    "pts": 6, "wins": 0,
+    "drivers": [
+      { "num": 27, "name": "尼科·胡尔肯伯格",     "initials": "HUL", "img": "https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/2025Drivers/hulkenberg.jpg" },
+      { "num": 5,  "name": "加布里埃尔·博尔托拉托", "initials": "BOR", "img": "https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/2025Drivers/bortoleto.jpg" }
+    ],
+    "desc": "Sauber 车队是 F1 元老之一，从 1993 年参赛至今，以培育新人著称。正在向 2026 年成为奥迪官方车队做最后的冲刺准备。",
+    "titles": { "driver": 0, "constructor": 0, "wins": 1 },
+    "history": [
+      { "y": 2025, "pos": "P10", "pts": 6, "w": 0 },
+      { "y": 2024, "pos": "P9", "pts": 4, "w": 0 },
+      { "y": 2023, "pos": "P9", "pts": 16, "w": 0 },
+      { "y": 2022, "pos": "P6", "pts": 3, "w": 0 }
+    ]
+  }
+]

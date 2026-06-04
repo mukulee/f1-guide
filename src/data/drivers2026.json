@@ -1,0 +1,156 @@
+[
+  {
+    "rank": 1, "prev": 1, "code": "ANT",
+    "name": "安东内利 K.", "nat": "意大利", "flag": "🇮🇹",
+    "team": "mercedes", "tname": "梅赛德斯",
+    "wins": 4, "podiums": 0, "pts": 131.0, "color": "#00D2BE", "trend": [],
+    "img": "https://media.formula1.com/image/upload/c_lfill,w_440/q_auto/d_common:f1:2026:fallback:driver:2026fallbackdriverright.webp/v1740000001/common/f1/2026/mercedes/andant01/2026mercedesandant01right.webp"
+  },
+  {
+    "rank": 2, "prev": 2, "code": "RUS",
+    "name": "罗素 G.", "nat": "英国", "flag": "🇬🇧",
+    "team": "mercedes", "tname": "梅赛德斯",
+    "wins": 1, "podiums": 0, "pts": 88.0, "color": "#00D2BE", "trend": [],
+    "img": "https://media.formula1.com/image/upload/c_lfill,w_440/q_auto/d_common:f1:2026:fallback:driver:2026fallbackdriverright.webp/v1740000001/common/f1/2026/mercedes/georus01/2026mercedesgeorus01right.webp"
+  },
+  {
+    "rank": 3, "prev": 3, "code": "LEC",
+    "name": "勒克莱尔 C.", "nat": "摩纳哥", "flag": "🇲🇨",
+    "team": "ferrari", "tname": "法拉利",
+    "wins": 0, "podiums": 0, "pts": 75.0, "color": "#DC0000", "trend": [],
+    "img": "https://media.formula1.com/image/upload/c_lfill,w_440/q_auto/d_common:f1:2026:fallback:driver:2026fallbackdriverright.webp/v1740000001/common/f1/2026/ferrari/chalec01/2026ferrarichalec01right.webp"
+  },
+  {
+    "rank": 4, "prev": 4, "code": "HAM",
+    "name": "汉密尔顿 L.", "nat": "英国", "flag": "🇬🇧",
+    "team": "ferrari", "tname": "法拉利",
+    "wins": 0, "podiums": 0, "pts": 72.0, "color": "#DC0000", "trend": [],
+    "img": "https://media.formula1.com/image/upload/c_lfill,w_440/q_auto/d_common:f1:2026:fallback:driver:2026fallbackdriverright.webp/v1740000001/common/f1/2026/ferrari/lewham01/2026ferrarilewham01right.webp"
+  },
+  {
+    "rank": 5, "prev": 5, "code": "NOR",
+    "name": "诺里斯 L.", "nat": "英国", "flag": "🇬🇧",
+    "team": "mclaren", "tname": "迈凯伦",
+    "wins": 0, "podiums": 0, "pts": 58.0, "color": "#FF8700", "trend": [],
+    "img": "https://media.formula1.com/image/upload/c_lfill,w_440/q_auto/d_common:f1:2026:fallback:driver:2026fallbackdriverright.webp/v1740000001/common/f1/2026/mclaren/lannor01/2026mclarenlannor01right.webp"
+  },
+  {
+    "rank": 6, "prev": 6, "code": "PIA",
+    "name": "皮亚斯特里 O.", "nat": "澳大利亚", "flag": "🇦🇺",
+    "team": "mclaren", "tname": "迈凯伦",
+    "wins": 0, "podiums": 0, "pts": 48.0, "color": "#FF8700", "trend": [],
+    "img": "https://media.formula1.com/image/upload/c_lfill,w_440/q_auto/d_common:f1:2026:fallback:driver:2026fallbackdriverright.webp/v1740000001/common/f1/2026/mclaren/oscpia01/2026mclarenoscpia01right.webp"
+  },
+  {
+    "rank": 7, "prev": 7, "code": "VER",
+    "name": "维斯塔潘 M.", "nat": "荷兰", "flag": "🇳🇱",
+    "team": "red_bull", "tname": "红牛",
+    "wins": 0, "podiums": 0, "pts": 43.0, "color": "#3671C6", "trend": [],
+    "img": "https://media.formula1.com/image/upload/c_lfill,w_440/q_auto/d_common:f1:2026:fallback:driver:2026fallbackdriverright.webp/v1740000001/common/f1/2026/redbullracing/maxver01/2026redbullracingmaxver01right.webp"
+  },
+  {
+    "rank": 8, "prev": 8, "code": "GAS",
+    "name": "加斯利 P.", "nat": "法国", "flag": "🇫🇷",
+    "team": "alpine", "tname": "阿尔派",
+    "wins": 0, "podiums": 0, "pts": 20.0, "color": "#0090FF", "trend": [],
+    "img": "https://media.formula1.com/image/upload/c_lfill,w_440/q_auto/d_common:f1:2026:fallback:driver:2026fallbackdriverright.webp/v1740000001/common/f1/2026/alpine/piegas01/2026alpinepiegas01right.webp"
+  },
+  {
+    "rank": 9, "prev": 9, "code": "BEA",
+    "name": "贝尔曼 O.", "nat": "英国", "flag": "🇬🇧",
+    "team": "haas", "tname": "哈斯",
+    "wins": 0, "podiums": 0, "pts": 18.0, "color": "#B8B8B8", "trend": [],
+    "img": "https://media.formula1.com/image/upload/c_lfill,w_440/q_auto/d_common:f1:2026:fallback:driver:2026fallbackdriverright.webp/v1740000001/common/f1/2026/haasf1team/olibea01/2026haasf1teamolibea01right.webp"
+  },
+  {
+    "rank": 10, "prev": 10, "code": "LAW",
+    "name": "劳森 L.", "nat": "新西兰", "flag": "🇳🇿",
+    "team": "rb", "tname": "RB车队",
+    "wins": 0, "podiums": 0, "pts": 16.0, "color": "#6692FF", "trend": [],
+    "img": "https://media.formula1.com/image/upload/c_lfill,w_440/q_auto/d_common:f1:2026:fallback:driver:2026fallbackdriverright.webp/v1740000001/common/f1/2026/racingbulls/lialaw01/2026racingbullslialaw01right.webp"
+  },
+  {
+    "rank": 11, "prev": 11, "code": "COL",
+    "name": "科拉平托 F.", "nat": "阿根廷", "flag": "🇦🇷",
+    "team": "alpine", "tname": "阿尔派",
+    "wins": 0, "podiums": 0, "pts": 15.0, "color": "#0090FF", "trend": [],
+    "img": "https://media.formula1.com/image/upload/c_lfill,w_440/q_auto/d_common:f1:2026:fallback:driver:2026fallbackdriverright.webp/v1740000001/common/f1/2026/alpine/fracol01/2026alpinefracol01right.webp"
+  },
+  {
+    "rank": 12, "prev": 12, "code": "HAD",
+    "name": "哈德贾尔 I.", "nat": "法国", "flag": "🇫🇷",
+    "team": "red_bull", "tname": "红牛",
+    "wins": 0, "podiums": 0, "pts": 14.0, "color": "#3671C6", "trend": [],
+    "img": "https://media.formula1.com/image/upload/c_lfill,w_440/q_auto/d_common:f1:2026:fallback:driver:2026fallbackdriverright.webp/v1740000001/common/f1/2026/redbullracing/isahad01/2026redbullracingisahad01right.webp"
+  },
+  {
+    "rank": 13, "prev": 13, "code": "SAI",
+    "name": "赛恩斯 C.", "nat": "西班牙", "flag": "🇪🇸",
+    "team": "williams", "tname": "威廉姆斯",
+    "wins": 0, "podiums": 0, "pts": 6.0, "color": "#005AFF", "trend": [],
+    "img": "https://media.formula1.com/image/upload/c_lfill,w_440/q_auto/d_common:f1:2026:fallback:driver:2026fallbackdriverright.webp/v1740000001/common/f1/2026/williams/carsai01/2026williamscarsai01right.webp"
+  },
+  {
+    "rank": 14, "prev": 14, "code": "LIN",
+    "name": "林德布拉德 A.", "nat": "英国", "flag": "🇬🇧",
+    "team": "rb", "tname": "RB车队",
+    "wins": 0, "podiums": 0, "pts": 5.0, "color": "#6692FF", "trend": [],
+    "img": "https://media.formula1.com/image/upload/c_lfill,w_440/q_auto/d_common:f1:2026:fallback:driver:2026fallbackdriverright.webp/v1740000001/common/f1/2026/racingbulls/arvlin01/2026racingbullsarvlin01right.webp"
+  },
+  {
+    "rank": 15, "prev": 15, "code": "BOR",
+    "name": "博尔托莱托 G.", "nat": "巴西", "flag": "🇧🇷",
+    "team": "audi", "tname": "奥迪",
+    "wins": 0, "podiums": 0, "pts": 2.0, "color": "#E8002D", "trend": [],
+    "img": "https://media.formula1.com/image/upload/c_lfill,w_440/q_auto/d_common:f1:2026:fallback:driver:2026fallbackdriverright.webp/v1740000001/common/f1/2026/audi/gabbor01/2026audigabbor01right.webp"
+  },
+  {
+    "rank": 16, "prev": 16, "code": "OCO",
+    "name": "奥康 E.", "nat": "法国", "flag": "🇫🇷",
+    "team": "haas", "tname": "哈斯",
+    "wins": 0, "podiums": 0, "pts": 1.0, "color": "#B8B8B8", "trend": [],
+    "img": "https://media.formula1.com/image/upload/c_lfill,w_440/q_auto/d_common:f1:2026:fallback:driver:2026fallbackdriverright.webp/v1740000001/common/f1/2026/haasf1team/estoco01/2026haasf1teamestoco01right.webp"
+  },
+  {
+    "rank": 17, "prev": 17, "code": "ALB",
+    "name": "阿尔邦 A.", "nat": "泰国", "flag": "🇹🇭",
+    "team": "williams", "tname": "威廉姆斯",
+    "wins": 0, "podiums": 0, "pts": 1.0, "color": "#005AFF", "trend": [],
+    "img": "https://media.formula1.com/image/upload/c_lfill,w_440/q_auto/d_common:f1:2026:fallback:driver:2026fallbackdriverright.webp/v1740000001/common/f1/2026/williams/alealb01/2026williamsalealb01right.webp"
+  },
+  {
+    "rank": 18, "prev": 18, "code": "HUL",
+    "name": "休尔肯贝格 N.", "nat": "德国", "flag": "🇩🇪",
+    "team": "audi", "tname": "奥迪",
+    "wins": 0, "podiums": 0, "pts": 0.0, "color": "#E8002D", "trend": [],
+    "img": "https://media.formula1.com/image/upload/c_lfill,w_440/q_auto/d_common:f1:2026:fallback:driver:2026fallbackdriverright.webp/v1740000001/common/f1/2026/audi/nichul01/2026audinichul01right.webp"
+  },
+  {
+    "rank": 19, "prev": 19, "code": "BOT",
+    "name": "博塔斯 V.", "nat": "芬兰", "flag": "🇫🇮",
+    "team": "cadillac", "tname": "凯迪拉克",
+    "wins": 0, "podiums": 0, "pts": 0.0, "color": "#C0C0C0", "trend": [],
+    "img": "https://media.formula1.com/image/upload/c_lfill,w_440/q_auto/d_common:f1:2026:fallback:driver:2026fallbackdriverright.webp/v1740000001/common/f1/2026/cadillac/valbot01/2026cadillacvalbot01right.webp"
+  },
+  {
+    "rank": 20, "prev": 20, "code": "PER",
+    "name": "佩雷斯 S.", "nat": "墨西哥", "flag": "🇲🇽",
+    "team": "cadillac", "tname": "凯迪拉克",
+    "wins": 0, "podiums": 0, "pts": 0.0, "color": "#C0C0C0", "trend": [],
+    "img": "https://media.formula1.com/image/upload/c_lfill,w_440/q_auto/d_common:f1:2026:fallback:driver:2026fallbackdriverright.webp/v1740000001/common/f1/2026/cadillac/serper01/2026cadillacserper01right.webp"
+  },
+  {
+    "rank": 21, "prev": 21, "code": "STR",
+    "name": "斯特罗尔 L.", "nat": "加拿大", "flag": "🇨🇦",
+    "team": "aston_martin", "tname": "阿斯顿·马丁",
+    "wins": 0, "podiums": 0, "pts": 0.0, "color": "#006F62", "trend": [],
+    "img": "https://media.formula1.com/image/upload/c_lfill,w_440/q_auto/d_common:f1:2026:fallback:driver:2026fallbackdriverright.webp/v1740000001/common/f1/2026/astonmartin/lanstr01/2026astonmartinlanstr01right.webp"
+  },
+  {
+    "rank": 22, "prev": 22, "code": "ALO",
+    "name": "阿隆索 F.", "nat": "西班牙", "flag": "🇪🇸",
+    "team": "aston_martin", "tname": "阿斯顿·马丁",
+    "wins": 0, "podiums": 0, "pts": 0.0, "color": "#006F62", "trend": [],
+    "img": "https://media.formula1.com/image/upload/c_lfill,w_440/q_auto/d_common:f1:2026:fallback:driver:2026fallbackdriverright.webp/v1740000001/common/f1/2026/astonmartin/feralo01/2026astonmartinferalo01right.webp"
+  }
+]
