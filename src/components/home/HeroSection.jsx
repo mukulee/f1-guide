@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import { motion, useScroll, useTransform } from 'framer-motion'
+import heroVideo from '../../assets/video/hero.mp4'
 
 // ── 配置 ──────────────────────────────────────
 const EYEBROW_TEXT  = '◆ 2026 一级方程式世界锦标赛 ◆'
@@ -7,13 +8,8 @@ const FORMULA_CHARS = ['F','O','R','M','U','L','A']
 const BASE_DELAY    = 900
 const CHAR_DELAY    = 68
 
-// ── YouTube 背景视频 ──────────────────────────
-// 视频：https://www.youtube.com/watch?v=Cs54R2Ks61s
-const YT_VIDEO_ID = 'Cs54R2Ks61s'
-
 export default function HeroSection() {
   const [eyebrow, setEyebrow] = useState('')
-  const [ytReady, setYtReady] = useState(false)
   const speedLinesRef         = useRef(null)
 
   // ── 滚动视差 ──────────────────────────────────
@@ -75,37 +71,32 @@ export default function HeroSection() {
       overflow: 'hidden',
     }}>
 
-      {/* ── YouTube 背景视频（全屏覆盖，静音自动播放循环） ── */}
+      {/* ── 本地背景视频（静音自动播放循环，无需科学上网） ── */}
       {/* 降级兜底：视频加载前显示深色背景 */}
       <div style={{
         position: 'absolute', inset: 0, zIndex: 0,
         background: 'linear-gradient(135deg, #0a0a0a 0%, #18080a 50%, #080a14 100%)',
       }} />
 
-      {/* YouTube iframe — 16:9 等比覆盖技巧：
-          宽至少 177.78vh（= 16/9 × 100vh），高至少 56.25vw（= 9/16 × 100vw）
-          translate(-50%,-50%) 居中，pointer-events:none 防止点击 */}
-      <iframe
-        src={`https://www.youtube.com/embed/${YT_VIDEO_ID}?autoplay=1&mute=1&loop=1&controls=0&showinfo=0&rel=0&modestbranding=1&playlist=${YT_VIDEO_ID}&playsinline=1&enablejsapi=1`}
-        allow="autoplay; encrypted-media"
-        onLoad={() => setYtReady(true)}
+      {/* video — objectFit:cover 铺满，pointer-events:none 防点击 */}
+      <video
+        autoPlay
+        muted
+        loop
+        playsInline
         style={{
           position: 'absolute',
-          top: '50%', left: '50%',
-          transform: 'translate(-50%, -50%)',
-          // 保持 16:9，同时完全覆盖容器
-          width: 'max(177.78vh, 100%)',
-          height: 'max(56.25vw, 100%)',
-          border: 'none',
-          pointerEvents: 'none',
+          top: 0, left: 0,
+          width: '100%', height: '100%',
+          objectFit: 'cover',
+          objectPosition: 'center center',
           zIndex: 1,
-          // 视频淡入
-          opacity: ytReady ? 1 : 0,
-          transition: 'opacity 1.2s ease',
-          // 暗化视频亮度
+          pointerEvents: 'none',
           filter: 'brightness(0.38) saturate(1.1)',
         }}
-      />
+      >
+        <source src={heroVideo} type="video/mp4" />
+      </video>
 
       {/* ── 渐变叠加 ── */}
       <div style={{
