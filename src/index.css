@@ -1,5 +1,5 @@
-/* ── Google Fonts（必须在所有 @import 最前面） ── */
-@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700;900&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap');
+/* ── 字体（loli.net 镜像，国内无需 VPN 可访问，字体内容与 Google Fonts 完全相同） ── */
+@import url('https://fonts.loli.net/css2?family=Titillium+Web:wght@300;400;600;700;900&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap');
 
 /* ── Tailwind v4 ── */
 @import "tailwindcss";
