@@ -2,6 +2,7 @@ import { useState, useRef, useEffect } from 'react'
 import { motion, AnimatePresence, useInView } from 'framer-motion'
 import { fetchRaceResult, fetchFastestLap } from '../../services/api'
 import useBreakpoint from '../../hooks/useBreakpoint.js'
+import TrackMap from './TrackMap.jsx'
 
 // ── 状态 Badge ────────────────────────────────
 const BADGE_STYLES = {
@@ -251,6 +252,19 @@ function RaceDetail({ race, year }) {
             </div>
           )}
         </div>
+
+        {/* 赛道地图 */}
+        <div style={{ marginTop: isMobile ? '16px' : '20px' }}>
+          <div style={{
+            fontFamily: 'var(--font-title)', fontSize: '10px', fontWeight: 700,
+            letterSpacing: '0.15em', color: '#9BA8A5', marginBottom: '10px',
+            textTransform: 'uppercase',
+          }}>
+            赛道地图
+          </div>
+          <TrackMap location={race.location} circuit={race.circuit} />
+        </div>
+
       </div>{/* padding div */}
       </div>{/* 容器 div */}
     </motion.div>
