@@ -13,7 +13,7 @@
       "headers": [
         {
           "key": "Content-Security-Policy",
-          "value": "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: blob: https: http:; frame-src https://player.bilibili.com https://www.bilibili.com; connect-src 'self' https://api.jolpi.ca https://ergast.com https://flagcdn.com https://api.bilibili.com https://api.rss2json.com https://api.allorigins.win https://corsproxy.io https://*.supabase.co wss://*.supabase.co; media-src 'self' blob: https://player.bilibili.com"
+          "value": "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: blob: https: http:; frame-src https://player.bilibili.com https://www.bilibili.com https://www.youtube.com https://youtube.com; connect-src 'self' https://api.jolpi.ca https://ergast.com https://flagcdn.com https://api.bilibili.com https://api.rss2json.com https://api.allorigins.win https://corsproxy.io https://*.supabase.co wss://*.supabase.co https://www.youtube.com; media-src 'self' blob: https://player.bilibili.com https://www.youtube.com"
         },
         {
           "key": "X-Frame-Options",

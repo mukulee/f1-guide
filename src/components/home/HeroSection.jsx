@@ -7,8 +7,13 @@ const FORMULA_CHARS = ['F','O','R','M','U','L','A']
 const BASE_DELAY    = 900
 const CHAR_DELAY    = 68
 
+// ── YouTube 背景视频 ──────────────────────────
+// 视频：https://www.youtube.com/watch?v=Cs54R2Ks61s
+const YT_VIDEO_ID = 'Cs54R2Ks61s'
+
 export default function HeroSection() {
   const [eyebrow, setEyebrow] = useState('')
+  const [ytReady, setYtReady] = useState(false)
   const speedLinesRef         = useRef(null)
 
   // ── 滚动视差 ──────────────────────────────────
@@ -22,10 +27,6 @@ export default function HeroSection() {
 
   // h1 标题额外：字间距展开（速度感散开）
   const titleSpread    = useTransform(scrollY, [0, 320],  ['0.05em', '0.42em'])
-
-  // 背景图：放大 + 上移（视差）
-  const bgScale        = useTransform(scrollY, [0, 700],  [1, 1.22])
-  const bgY            = useTransform(scrollY, [0, 700],  ['0%', '9%'])
 
   // 遮罩随滚动加深（沉浸感）
   const overlayOpacity = useTransform(scrollY, [0, 400],  [0, 0.45])
@@ -74,21 +75,37 @@ export default function HeroSection() {
       overflow: 'hidden',
     }}>
 
-      {/* ── 背景图（视差缩放+上移） ── */}
-      {/* F1 官网 · 2026 中国大奖赛颁奖台 · trackside-images CDN */}
-      <motion.div style={{
+      {/* ── YouTube 背景视频（全屏覆盖，静音自动播放循环） ── */}
+      {/* 降级兜底：视频加载前显示深色背景 */}
+      <div style={{
         position: 'absolute', inset: 0, zIndex: 0,
-        backgroundImage: [
-          "url('https://media.formula1.com/image/upload/f_auto,c_limit,q_auto,w_1920/trackside-images/2026/F1_Grand_Prix_Of_China/2267026176.webp')",
-          "linear-gradient(135deg, #0a0a0a 0%, #18080a 50%, #080a14 100%)",
-        ].join(', '),
-        backgroundSize: 'cover',
-        backgroundPosition: 'center 25%',
-        filter: 'brightness(0.46) saturate(1.22)',
-        scale: bgScale,
-        y: bgY,
-        transformOrigin: 'center center',
+        background: 'linear-gradient(135deg, #0a0a0a 0%, #18080a 50%, #080a14 100%)',
       }} />
+
+      {/* YouTube iframe — 16:9 等比覆盖技巧：
+          宽至少 177.78vh（= 16/9 × 100vh），高至少 56.25vw（= 9/16 × 100vw）
+          translate(-50%,-50%) 居中，pointer-events:none 防止点击 */}
+      <iframe
+        src={`https://www.youtube.com/embed/${YT_VIDEO_ID}?autoplay=1&mute=1&loop=1&controls=0&showinfo=0&rel=0&modestbranding=1&playlist=${YT_VIDEO_ID}&playsinline=1&enablejsapi=1`}
+        allow="autoplay; encrypted-media"
+        onLoad={() => setYtReady(true)}
+        style={{
+          position: 'absolute',
+          top: '50%', left: '50%',
+          transform: 'translate(-50%, -50%)',
+          // 保持 16:9，同时完全覆盖容器
+          width: 'max(177.78vh, 100%)',
+          height: 'max(56.25vw, 100%)',
+          border: 'none',
+          pointerEvents: 'none',
+          zIndex: 1,
+          // 视频淡入
+          opacity: ytReady ? 1 : 0,
+          transition: 'opacity 1.2s ease',
+          // 暗化视频亮度
+          filter: 'brightness(0.38) saturate(1.1)',
+        }}
+      />
 
       {/* ── 渐变叠加 ── */}
       <div style={{
