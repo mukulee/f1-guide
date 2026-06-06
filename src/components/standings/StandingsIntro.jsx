@@ -6,6 +6,7 @@
 import { useEffect, useState, useRef } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import standingsVideo from '../../assets/video/standings.mp4'
+import HeroAtmosphere from '../ui/HeroAtmosphere'
 
 // ── 本地视频（颁奖台/积分揭晓场景） ──────────────
 const VIDEO_SRC = standingsVideo
@@ -171,6 +172,9 @@ export default function StandingsIntro({ onDone }) {
           background: 'radial-gradient(ellipse 80% 60% at 50% 50%, transparent 30%, rgba(5,5,5,0.7) 100%)',
           pointerEvents: 'none',
         }} />
+
+        {/* ── 赛车氛围装饰层 ── */}
+        <HeroAtmosphere zIndex={2} variant="standings" />
 
         {/* ── 核心内容：居中标题 ── */}
         <div style={{ position: 'relative', zIndex: 10, textAlign: 'center' }}>

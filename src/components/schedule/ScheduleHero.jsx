@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import { motion, useScroll, useTransform, AnimatePresence } from 'framer-motion'
 import scheduleVideo from '../../assets/video/schedule.mp4'
 import useBreakpoint from '../../hooks/useBreakpoint'
+import HeroAtmosphere from '../ui/HeroAtmosphere'
 
 // ── 可切换的年份 ──────────────────────────────
 const YEARS = [2024, 2025, 2026]
@@ -218,6 +219,9 @@ export default function ScheduleHero({
           'radial-gradient(ellipse 70% 60% at 50% 40%, rgba(0,210,190,0.04) 0%, transparent 70%)',
         ].join(', '),
       }} />
+
+      {/* ── 赛车氛围装饰层（速度线 + 遥测HUD + 扫描线）── */}
+      <HeroAtmosphere zIndex={3} variant="schedule" />
 
       {/* 赛道线条装饰 */}
       <div style={{

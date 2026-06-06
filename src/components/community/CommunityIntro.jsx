@@ -6,6 +6,7 @@
 import { useEffect, useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import communityVideo from '../../assets/video/community.mp4'
+import HeroAtmosphere from '../ui/HeroAtmosphere'
 
 // ── 本地视频（观众席/粉丝互动场景） ───────────────
 const VIDEO_SRC = communityVideo
@@ -190,6 +191,9 @@ export default function CommunityIntro({ onDone }) {
             background: 'radial-gradient(ellipse 80% 60% at 50% 50%, transparent 28%, rgba(13,13,13,0.75) 100%)',
             pointerEvents: 'none',
           }} />
+
+          {/* ── 赛车氛围装饰层 ── */}
+          <HeroAtmosphere zIndex={2} variant="community" />
 
           {/* 四角装饰 */}
           {[

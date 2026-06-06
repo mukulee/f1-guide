@@ -6,6 +6,7 @@
 import { useEffect, useState, useRef } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import learnVideo from '../../assets/video/learn.mp4'
+import HeroAtmosphere from '../ui/HeroAtmosphere'
 
 // ── 本地视频（赛车技术特写/科普场景） ──────────────
 const VIDEO_SRC = learnVideo
@@ -173,6 +174,9 @@ export default function LearnIntro({ onDone }) {
           background: 'radial-gradient(ellipse 80% 60% at 50% 50%, transparent 25%, rgba(5,5,5,0.72) 100%)',
           pointerEvents: 'none',
         }} />
+
+        {/* ── 赛车氛围装饰层 ── */}
+        <HeroAtmosphere zIndex={2} variant="learn" />
 
         {/* ── 核心内容 ── */}
         <div style={{ position: 'relative', zIndex: 10, textAlign: 'center', padding: '0 24px' }}>
