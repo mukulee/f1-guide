@@ -9,6 +9,7 @@ import CommunityIntro from '../components/community/CommunityIntro.jsx'
 import DebateBlock from '../components/community/DebateBlock.jsx'
 import FlashBlock from '../components/community/FlashBlock.jsx'
 import CountdownWidget from '../components/community/CountdownWidget.jsx'
+import useBreakpoint from '../hooks/useBreakpoint.js'
 
 // ── 热门话题数据 ──────────────────────────────────
 const TOPICS = [
@@ -293,6 +294,7 @@ function RankList() {
 
 // ── 主页面 ────────────────────────────────────────
 export default function Community() {
+  const { isMobile } = useBreakpoint()
   const [introDone,  setIntroDone]  = useState(false)
   const [nickname,   setNickname]   = useState('')   // 当前用户昵称，传给 DebateBlock
 
@@ -311,7 +313,7 @@ export default function Community() {
         <div style={{
           maxWidth: 1200,
           margin: '0 auto',
-          padding: '56px 32px 80px',
+          padding: isMobile ? '28px 16px 60px' : '56px 32px 80px',
         }}>
 
           {/* ── Hero 区 ── */}
@@ -319,7 +321,7 @@ export default function Community() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: introDone ? 1 : 0, y: introDone ? 0 : 20 }}
             transition={{ delay: 0.1, duration: 0.6 }}
-            style={{ marginBottom: 48 }}
+            style={{ marginBottom: isMobile ? 32 : 48 }}
           >
             {/* 眉标 */}
             <div style={{
@@ -395,6 +397,7 @@ export default function Community() {
             @media (max-width: 860px) {
               .community-content-grid {
                 grid-template-columns: 1fr;
+                gap: 16px;
               }
             }
           `}</style>

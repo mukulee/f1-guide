@@ -5,6 +5,7 @@
 
 import { useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
+import useBreakpoint from '../../hooks/useBreakpoint.js'
 
 // ── 播放图标 ───────────────────────────────────────
 function PlayIcon() {
@@ -26,6 +27,7 @@ function CloseIcon() {
 }
 
 export default function VideoModal({ module, onClose }) {
+  const { isMobile } = useBreakpoint()
   // ESC 关闭
   useEffect(() => {
     if (!module) return
@@ -58,8 +60,8 @@ export default function VideoModal({ module, onClose }) {
             position: 'fixed', inset: 0, zIndex: 300,
             background: 'rgba(0,0,0,0.92)',
             backdropFilter: 'blur(12px)',
-            display: 'flex', alignItems: 'center', justifyContent: 'center',
-            padding: '24px',
+            display: 'flex', alignItems: isMobile ? 'flex-end' : 'center', justifyContent: 'center',
+            padding: isMobile ? '0' : '24px',
           }}
         >
           {/* 内容面板 — 阻止冒泡 */}
@@ -74,7 +76,7 @@ export default function VideoModal({ module, onClose }) {
               position: 'relative',
               width: '100%', maxWidth: 960,
               background: '#111111',
-              borderRadius: 8,
+              borderRadius: isMobile ? '12px 12px 0 0' : 8,
               border: `1px solid ${accentColor}4D`, // 30% 透明度
               overflow: 'hidden',
               boxShadow: `0 0 60px ${accentColor}26, 0 24px 64px rgba(0,0,0,0.7)`,
@@ -122,7 +124,7 @@ export default function VideoModal({ module, onClose }) {
             </div>
 
             {/* 底部信息区 */}
-            <div style={{ padding: '20px 28px 24px' }}>
+            <div style={{ padding: isMobile ? '14px 16px 20px' : '20px 28px 24px' }}>
               {/* 模块编号 */}
               <div style={{
                 fontFamily: 'var(--font-mono)', fontSize: 10,
@@ -134,17 +136,17 @@ export default function VideoModal({ module, onClose }) {
 
               {/* 标题 */}
               <h3 style={{
-                fontFamily: 'var(--font-title)', fontSize: 22,
+                fontFamily: 'var(--font-title)', fontSize: isMobile ? 17 : 22,
                 fontWeight: 700, color: '#FFFFFF',
                 marginBottom: 8, lineHeight: 1.2,
               }}>
                 {module.title}
               </h3>
 
-              {/* 描述 + B站备用链接 */}
-              <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', gap: 16 }}>
+              {/* 描述 + B站备用链接（移动端竖向堆叠） */}
+              <div style={{ display: 'flex', flexDirection: isMobile ? 'column' : 'row', alignItems: isMobile ? 'flex-start' : 'flex-start', justifyContent: 'space-between', gap: isMobile ? 10 : 16 }}>
                 <p style={{
-                  fontFamily: 'var(--font-body)', fontSize: 14,
+                  fontFamily: 'var(--font-body)', fontSize: isMobile ? 13 : 14,
                   color: '#9BA8A5', lineHeight: 1.65, flex: 1,
                 }}>
                   {module.desc}

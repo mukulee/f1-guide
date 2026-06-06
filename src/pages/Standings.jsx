@@ -8,6 +8,7 @@ import useStandings from '../hooks/useStandings.js'
 import { DriverStandingsTable, TeamStandingsTable } from '../components/standings/StandingsTable.jsx'
 import StandingsChart from '../components/standings/StandingsChart.jsx'
 import StandingsIntro from '../components/standings/StandingsIntro.jsx'
+import useBreakpoint from '../hooks/useBreakpoint.js'
 
 // ── 支持的年份 ─────────────────────────────────────
 const YEARS = [2024, 2025, 2026]
@@ -107,6 +108,7 @@ function YearSelector({ year, onChange }) {
 // ── 主页面 ─────────────────────────────────────────
 export default function Standings() {
   const location = useLocation()
+  const { isMobile } = useBreakpoint()
   // 从车队页等外部跳转时携带 skipIntro=true，直接跳过开场动效
   const skipIntro = location.state?.skipIntro === true
 
@@ -151,7 +153,7 @@ export default function Standings() {
           background: 'linear-gradient(to bottom, rgba(0,210,190,0.05) 0%, transparent 100%)',
           borderBottom: '1px solid rgba(255,255,255,0.05)',
         }}>
-          <div style={{ maxWidth: 1200, margin: '0 auto', padding: '40px 32px 28px' }}>
+          <div style={{ maxWidth: 1200, margin: '0 auto', padding: isMobile ? '24px 16px 20px' : '40px 32px 28px' }}>
             <div style={{ display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between', flexWrap: 'wrap', gap: 16 }}>
 
               {/* 标题区 */}
@@ -200,7 +202,7 @@ export default function Standings() {
 
         {/* ── TABS ── */}
         <div style={{ borderBottom: '1px solid rgba(255,255,255,0.10)' }}>
-          <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 32px', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+          <div style={{ maxWidth: 1200, margin: '0 auto', padding: isMobile ? '0 8px' : '0 32px', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
             <div style={{ display: 'flex' }}>
               <TabBtn active={tab === 'drivers'} onClick={() => handleTabChange('drivers')}>车手积分</TabBtn>
               <TabBtn active={tab === 'teams'}   onClick={() => handleTabChange('teams')}>车队积分</TabBtn>
@@ -228,7 +230,7 @@ export default function Standings() {
         </div>
 
         {/* ── 内容区 ── */}
-        <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 32px', overflow: 'hidden' }}>
+        <div style={{ maxWidth: 1200, margin: '0 auto', padding: isMobile ? '0 12px' : '0 32px', overflow: 'hidden' }}>
           <AnimatePresence mode="wait" custom={direction}>
             {tab === 'drivers' ? (
               <motion.div

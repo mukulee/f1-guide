@@ -4,6 +4,7 @@
 
 import { useEffect, useRef, useState, useCallback } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
+import useBreakpoint from '../../hooks/useBreakpoint.js'
 import {
   Chart,
   LineController, LineElement, PointElement, LinearScale,
@@ -245,6 +246,7 @@ function EmptyState({ isDriver }) {
 
 // ── 主组件 ─────────────────────────────────────────
 export default function StandingsChart({ entities, type = 'driver', maxQuick = 5, year = 2026 }) {
+  const { isMobile } = useBreakpoint()
   const isDriver = type === 'driver'
   const hasTop10 = entities.length > 5
 
@@ -365,7 +367,7 @@ export default function StandingsChart({ entities, type = 'driver', maxQuick = 5
         background: 'linear-gradient(135deg, #0f0f0f 0%, #111 100%)',
         border: '1px solid rgba(255,255,255,0.07)',
         borderRadius: 10,
-        padding: 24,
+        padding: isMobile ? 14 : 24,
       }}>
         {/* 快捷按钮行 */}
         <div style={{ display: 'flex', gap: 8, marginBottom: 16, flexWrap: 'wrap', alignItems: 'center' }}>
@@ -434,12 +436,12 @@ export default function StandingsChart({ entities, type = 'driver', maxQuick = 5
           background: 'rgba(255,255,255,0.025)',
           border: '1px solid rgba(255,255,255,0.07)',
           borderRadius: 8,
-          padding: '14px 16px',
-          maxHeight: 192,
+          padding: isMobile ? '10px 12px' : '14px 16px',
+          maxHeight: isMobile ? 160 : 192,
           overflowY: 'auto',
           marginBottom: 20,
           display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fill, minmax(170px, 1fr))',
+          gridTemplateColumns: isMobile ? 'repeat(auto-fill, minmax(120px, 1fr))' : 'repeat(auto-fill, minmax(170px, 1fr))',
           gap: '10px 8px',
           scrollbarWidth: 'thin',
           scrollbarColor: 'rgba(0,210,190,0.25) transparent',
@@ -468,7 +470,7 @@ export default function StandingsChart({ entities, type = 'driver', maxQuick = 5
                   position: 'absolute', inset: 0, zIndex: 2,
                   display: 'flex', flexDirection: 'column',
                   alignItems: 'center', justifyContent: 'center', gap: 12,
-                  height: 380,
+                  height: isMobile ? 240 : 380,
                 }}
               >
                 <svg width="40" height="40" fill="none" viewBox="0 0 24 24" stroke="rgba(0,210,190,0.25)" strokeWidth="1.5">
@@ -489,7 +491,7 @@ export default function StandingsChart({ entities, type = 'driver', maxQuick = 5
             }
             transition={{ duration: 0.45, ease: [0.22, 1, 0.36, 1] }}
             style={{
-              position: 'relative', height: 380,
+              position: 'relative', height: isMobile ? 240 : 380,
               borderTop: isComparing ? '1px solid rgba(0,210,190,0.12)' : '1px solid transparent',
               paddingTop: 4,
             }}

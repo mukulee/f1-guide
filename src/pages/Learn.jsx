@@ -8,6 +8,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import LearnCard  from '../components/learn/LearnCard.jsx'
 import VideoModal from '../components/learn/VideoModal.jsx'
 import LearnIntro from '../components/learn/LearnIntro.jsx'
+import useBreakpoint from '../hooks/useBreakpoint.js'
 
 // ── Tab 顺序 ───────────────────────────────────────
 const TAB_ORDER = ['beginner', 'advanced']
@@ -145,10 +146,10 @@ const panelVariants = {
 }
 
 // ── 进阶引导横幅 ──────────────────────────────────
-function NextBanner({ onSwitch }) {
+function NextBanner({ onSwitch, isMobile }) {
   const [hovered, setHovered] = useState(false)
   return (
-    <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 32px 80px' }}>
+    <div style={{ maxWidth: 1200, margin: '0 auto', padding: isMobile ? '0 16px 60px' : '0 32px 80px' }}>
       <motion.div
         initial={{ opacity: 0, y: 16 }}
         animate={{ opacity: 1, y: 0 }}
@@ -191,6 +192,7 @@ function NextBanner({ onSwitch }) {
 
 // ── 主页面 ─────────────────────────────────────────
 export default function Learn() {
+  const { isMobile } = useBreakpoint()
   const [tab,          setTab]          = useState('beginner')
   const [activeModule, setActiveModule] = useState(null)     // 当前打开的视频模块
   const [introDone,    setIntroDone]    = useState(false)    // 开场动效是否完成
@@ -224,7 +226,7 @@ export default function Learn() {
           background: 'linear-gradient(to bottom, rgba(0,210,190,0.04) 0%, transparent 100%)',
           borderBottom: '1px solid rgba(255,255,255,0.05)',
         }}>
-          <div style={{ maxWidth: 1200, margin: '0 auto', padding: '48px 32px 36px' }}>
+          <div style={{ maxWidth: 1200, margin: '0 auto', padding: isMobile ? '28px 16px 24px' : '48px 32px 36px' }}>
             <div style={{
               fontFamily: 'var(--font-mono)', fontSize: 11,
               letterSpacing: '0.22em', color: '#00D2BE', opacity: 0.7,
@@ -257,19 +259,21 @@ export default function Learn() {
           backdropFilter: 'blur(12px)',
           borderBottom: '1px solid rgba(255,255,255,0.10)',
         }}>
-          <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 32px', display: 'flex' }}>
+          <div style={{ maxWidth: 1200, margin: '0 auto', padding: isMobile ? '0 8px' : '0 32px', display: 'flex' }}>
             <TabBtn active={tab === 'beginner'} onClick={() => handleTabChange('beginner')}>新手必读</TabBtn>
             <TabBtn active={tab === 'advanced'} onClick={() => handleTabChange('advanced')}>进阶课堂</TabBtn>
 
-            {/* 右侧时长提示 */}
-            <div style={{
-              marginLeft: 'auto',
-              display: 'flex', alignItems: 'center',
-              fontFamily: 'var(--font-mono)', fontSize: 10,
-              letterSpacing: '0.15em', color: 'rgba(0,210,190,0.45)',
-            }}>
-              5 个模块 · {tab === 'beginner' ? '约 45 分钟' : '约 50 分钟'}
-            </div>
+            {/* 右侧时长提示（移动端隐藏） */}
+            {!isMobile && (
+              <div style={{
+                marginLeft: 'auto',
+                display: 'flex', alignItems: 'center',
+                fontFamily: 'var(--font-mono)', fontSize: 10,
+                letterSpacing: '0.15em', color: 'rgba(0,210,190,0.45)',
+              }}>
+                5 个模块 · {tab === 'beginner' ? '约 45 分钟' : '约 50 分钟'}
+              </div>
+            )}
           </div>
         </div>
 
@@ -287,10 +291,10 @@ export default function Learn() {
               {/* 卡片网格 */}
               <div style={{
                 maxWidth: 1200, margin: '0 auto',
-                padding: '32px 32px 0',
+                padding: isMobile ? '20px 16px 0' : '32px 32px 0',
                 display: 'grid',
-                gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))',
-                gap: 16,
+                gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))',
+                gap: isMobile ? 12 : 16,
               }}>
                 {modules.map((mod, i) => (
                   <LearnCard
@@ -304,8 +308,8 @@ export default function Learn() {
 
               {/* 新手面板：底部引导横幅 */}
               {tab === 'beginner' && (
-                <div style={{ marginTop: 48 }}>
-                  <NextBanner onSwitch={() => handleTabChange('advanced')} />
+                <div style={{ marginTop: isMobile ? 32 : 48 }}>
+                  <NextBanner onSwitch={() => handleTabChange('advanced')} isMobile={isMobile} />
                 </div>
               )}
 

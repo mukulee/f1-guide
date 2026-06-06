@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { motion, useScroll, useTransform, AnimatePresence } from 'framer-motion'
 import scheduleVideo from '../../assets/video/schedule.mp4'
+import useBreakpoint from '../../hooks/useBreakpoint'
 
 // ── 可切换的年份 ──────────────────────────────
 const YEARS = [2024, 2025, 2026]
@@ -27,7 +28,7 @@ function useCountdown(targetDate) {
 }
 
 // ── 单个倒计时数字方块（上翻动效） ────────────
-function CdBox({ value, label, index }) {
+function CdBox({ value, label, index, compact }) {
   const display = String(value).padStart(2, '0')
 
   return (
@@ -36,7 +37,8 @@ function CdBox({ value, label, index }) {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: 0.6 + index * 0.08 }}
       style={{
-        width: '96px', padding: '18px 8px 14px',
+        width: compact ? '72px' : '96px',
+        padding: compact ? '12px 4px 10px' : '18px 8px 14px',
         background: 'rgba(0,0,0,0.5)',
         border: '1px solid rgba(0,210,190,0.3)',
         borderRadius: '6px',
@@ -56,7 +58,7 @@ function CdBox({ value, label, index }) {
       }} />
 
       {/* 数字区域 — overflow:hidden 裁剪翻牌 */}
-      <div style={{ position: 'relative', height: '52px', width: '100%', overflow: 'hidden' }}>
+      <div style={{ position: 'relative', height: compact ? '38px' : '52px', width: '100%', overflow: 'hidden' }}>
         <AnimatePresence mode="popLayout" initial={false}>
           <motion.div
             key={display}
@@ -66,8 +68,8 @@ function CdBox({ value, label, index }) {
             transition={{ duration: 0.32, ease: [0.22, 1, 0.36, 1] }}
             style={{
               position: 'absolute', width: '100%', textAlign: 'center',
-              fontFamily: 'var(--font-mono)', fontSize: '44px', fontWeight: 700,
-              color: '#00D2BE', lineHeight: '52px', letterSpacing: '-0.02em',
+              fontFamily: 'var(--font-mono)', fontSize: compact ? '30px' : '44px', fontWeight: 700,
+              color: '#00D2BE', lineHeight: compact ? '38px' : '52px', letterSpacing: '-0.02em',
               userSelect: 'none',
             }}
           >
@@ -78,9 +80,9 @@ function CdBox({ value, label, index }) {
 
       {/* 单位标签 */}
       <div style={{
-        fontFamily: 'var(--font-title)', fontSize: '10px', fontWeight: 600,
+        fontFamily: 'var(--font-title)', fontSize: compact ? '9px' : '10px', fontWeight: 600,
         letterSpacing: '0.2em', color: 'rgba(255,255,255,0.45)',
-        marginTop: '8px', textTransform: 'uppercase',
+        marginTop: compact ? '5px' : '8px', textTransform: 'uppercase',
       }}>
         {label}
       </div>
@@ -161,6 +163,7 @@ export default function ScheduleHero({
   selectedYear, onYearChange,
 }) {
   const countdown = useCountdown(nextRace?.raceDate ?? new Date(Date.now() + 86400000 * 365))
+  const { isMobile } = useBreakpoint()
 
   // 滚动视差（对齐首页 Hero 效果）
   const { scrollY } = useScroll()
@@ -280,11 +283,11 @@ export default function ScheduleHero({
         {/* 倒计时 — 仅在有下一站时显示 */}
         {hasNextRace && (
           <>
-            <div style={{ display: 'flex', gap: '10px', justifyContent: 'center', marginBottom: '32px' }}>
-              <CdBox value={countdown.days} label="天" index={0} />
-              <CdBox value={countdown.hrs}  label="时" index={1} />
-              <CdBox value={countdown.min}  label="分" index={2} />
-              <CdBox value={countdown.sec}  label="秒" index={3} />
+            <div style={{ display: 'flex', gap: isMobile ? '6px' : '10px', justifyContent: 'center', marginBottom: '32px' }}>
+              <CdBox value={countdown.days} label="天" index={0} compact={isMobile} />
+              <CdBox value={countdown.hrs}  label="时" index={1} compact={isMobile} />
+              <CdBox value={countdown.min}  label="分" index={2} compact={isMobile} />
+              <CdBox value={countdown.sec}  label="秒" index={3} compact={isMobile} />
             </div>
 
             {/* 赛道附加信息 */}

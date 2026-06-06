@@ -7,6 +7,7 @@
 
 import { useEffect, useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
+import useBreakpoint from '../../hooks/useBreakpoint.js'
 
 // ── 关闭图标 ──────────────────────────────────────
 function CloseIcon() {
@@ -217,6 +218,7 @@ function HistoryTable({ team }) {
 
 // ── 主组件 ────────────────────────────────────────
 export default function TeamPanel({ team, onClose, onGoStandings }) {
+  const { isMobile } = useBreakpoint()
   // ESC 键关闭
   useEffect(() => {
     if (!team) return
@@ -250,25 +252,31 @@ export default function TeamPanel({ team, onClose, onGoStandings }) {
             }}
           />
 
-          {/* 抽屉面板：弹簧入场 */}
+          {/* 抽屉面板：桌面右侧滑入 / 移动端底部弹出 */}
           <motion.aside
             key="panel-body"
-            initial={{ x: '100%', boxShadow: 'none' }}
-            animate={{
-              x: 0,
-              boxShadow: `-24px 0 80px rgba(0,0,0,0.6), -1px 0 0 rgba(255,255,255,0.06)`,
-            }}
-            exit={{ x: '100%', boxShadow: 'none' }}
+            initial={isMobile ? { y: '100%' } : { x: '100%', boxShadow: 'none' }}
+            animate={isMobile
+              ? { y: 0 }
+              : { x: 0, boxShadow: `-24px 0 80px rgba(0,0,0,0.6), -1px 0 0 rgba(255,255,255,0.06)` }
+            }
+            exit={isMobile ? { y: '100%' } : { x: '100%', boxShadow: 'none' }}
             transition={{
-              x: {
-                type: 'spring',
-                stiffness: 340,
-                damping: 32,
-                mass: 0.9,
-              },
-              boxShadow: { duration: 0.35 },
+              type: 'spring',
+              stiffness: 340,
+              damping: 32,
+              mass: 0.9,
             }}
-            style={{
+            style={isMobile ? {
+              position: 'fixed', left: 0, right: 0, bottom: 0,
+              zIndex: 201,
+              height: '85vh',
+              background: '#111111',
+              borderTop: `2px solid ${team.color}`,
+              borderRadius: '16px 16px 0 0',
+              display: 'flex', flexDirection: 'column',
+              overflow: 'hidden',
+            } : {
               position: 'fixed', top: 0, right: 0, bottom: 0,
               zIndex: 201,
               width: 'min(560px, 90vw)',
@@ -278,16 +286,22 @@ export default function TeamPanel({ team, onClose, onGoStandings }) {
               overflow: 'hidden',
             }}
           >
-            {/* 顶部主题色条 */}
-            <div style={{
-              height: 4, width: '100%', flexShrink: 0,
-              background: team.color,
-              boxShadow: `0 0 20px ${team.color}80`,
-            }} />
+            {/* 顶部主题色条（移动端改为拖动把手） */}
+            {isMobile ? (
+              <div style={{ padding: '12px 0 4px', display: 'flex', justifyContent: 'center', flexShrink: 0 }}>
+                <div style={{ width: 40, height: 4, borderRadius: 2, background: 'rgba(255,255,255,0.2)' }} />
+              </div>
+            ) : (
+              <div style={{
+                height: 4, width: '100%', flexShrink: 0,
+                background: team.color,
+                boxShadow: `0 0 20px ${team.color}80`,
+              }} />
+            )}
 
             {/* 面板 Header */}
             <div style={{
-              padding: '28px 32px 20px',
+              padding: isMobile ? '12px 20px 16px' : '28px 32px 20px',
               borderBottom: '1px solid rgba(255,255,255,0.07)',
               flexShrink: 0,
               display: 'flex', alignItems: 'flex-start', gap: 16,
@@ -328,7 +342,7 @@ export default function TeamPanel({ team, onClose, onGoStandings }) {
 
             {/* 可滚动内容区 */}
             <div style={{
-              flex: 1, overflowY: 'auto', padding: '24px 32px',
+              flex: 1, overflowY: 'auto', padding: isMobile ? '16px 20px' : '24px 32px',
               scrollbarWidth: 'thin',
               scrollbarColor: 'rgba(255,255,255,0.1) transparent',
             }}>
@@ -361,7 +375,7 @@ export default function TeamPanel({ team, onClose, onGoStandings }) {
 
             {/* 底部 CTA */}
             <div style={{
-              padding: '20px 32px',
+              padding: isMobile ? '14px 20px 20px' : '20px 32px',
               borderTop: '1px solid rgba(255,255,255,0.07)',
               flexShrink: 0,
             }}>

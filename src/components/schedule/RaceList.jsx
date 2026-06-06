@@ -1,6 +1,7 @@
 import { useState, useRef, useEffect } from 'react'
 import { motion, AnimatePresence, useInView } from 'framer-motion'
 import { fetchRaceResult, fetchFastestLap } from '../../services/api'
+import useBreakpoint from '../../hooks/useBreakpoint.js'
 
 // ── 状态 Badge ────────────────────────────────
 const BADGE_STYLES = {
@@ -71,6 +72,7 @@ function ResultSkeleton() {
 
 // ── 展开详情面板（含懒加载） ──────────────────
 function RaceDetail({ race, year }) {
+  const { isMobile } = useBreakpoint()
   const isCompleted = race.status === 'completed'
 
   // 懒加载状态：
@@ -126,7 +128,7 @@ function RaceDetail({ race, year }) {
           background: 'radial-gradient(circle, rgba(0,210,190,0.07) 0%, transparent 70%)',
           pointerEvents: 'none',
         }} />
-      <div style={{ padding: '24px 28px' }}>
+      <div style={{ padding: isMobile ? '16px 16px' : '24px 28px' }}>
 
         {/* 已完赛：颁奖台 + 最快圈速 */}
         {isCompleted && (
@@ -176,8 +178,8 @@ function RaceDetail({ race, year }) {
           </>
         )}
 
-        {/* 两列：赛道信息 + 周末赛程 */}
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px' }}>
+        {/* 两列：赛道信息 + 周末赛程（移动端单列） */}
+        <div style={{ display: 'grid', gridTemplateColumns: isMobile ? '1fr' : '1fr 1fr', gap: isMobile ? '16px' : '20px' }}>
 
           {/* 赛道参数 */}
           <div>
@@ -257,6 +259,7 @@ function RaceDetail({ race, year }) {
 
 // ── 单行赛事 ──────────────────────────────────
 function RaceRow({ race, index, year }) {
+  const { isMobile } = useBreakpoint()
   const [open, setOpen] = useState(race.status === 'next')
   const [hovered, setHovered] = useState(false)
   const ref = useRef(null)
@@ -279,7 +282,7 @@ function RaceRow({ race, index, year }) {
         onMouseLeave={() => setHovered(false)}
         style={{
           display: 'flex', alignItems: 'center', justifyContent: 'space-between',
-          padding: '18px 22px',
+          padding: isMobile ? '14px 14px' : '18px 22px',
           background: isNext
             ? hovered ? 'rgba(0,210,190,0.09)' : 'rgba(0,210,190,0.05)'
             : hovered ? 'rgba(0,210,190,0.04)' : 'rgba(255,255,255,0.02)',
@@ -299,11 +302,11 @@ function RaceRow({ race, index, year }) {
         }}
       >
         {/* 左侧 */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: '18px', flex: 1, minWidth: 0 }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: isMobile ? '10px' : '18px', flex: 1, minWidth: 0 }}>
           {/* 场次编号 */}
           <span style={{
-            fontFamily: 'var(--font-mono)', fontSize: '11px', fontWeight: 700,
-            letterSpacing: '0.06em', minWidth: '40px', flexShrink: 0,
+            fontFamily: 'var(--font-mono)', fontSize: isMobile ? '10px' : '11px', fontWeight: 700,
+            letterSpacing: '0.06em', minWidth: isMobile ? '32px' : '40px', flexShrink: 0,
             color: isNext ? '#00D2BE' : '#9BA8A5',
           }}>
             第{String(race.round).padStart(2, '0')}站
@@ -312,7 +315,7 @@ function RaceRow({ race, index, year }) {
           {/* 国旗 */}
           <img
             src={race.flag} alt={race.country}
-            width={36} height={24}
+            width={isMobile ? 28 : 36} height={isMobile ? 19 : 24}
             style={{
               objectFit: 'cover', borderRadius: '2px', flexShrink: 0,
               boxShadow: isNext ? '0 0 8px rgba(0,210,190,0.4)' : 'none',
@@ -323,41 +326,43 @@ function RaceRow({ race, index, year }) {
           {/* 名称 */}
           <div style={{ minWidth: 0 }}>
             <div style={{
-              fontFamily: 'var(--font-title)', fontSize: '15px', fontWeight: 700,
+              fontFamily: 'var(--font-title)', fontSize: isMobile ? '13px' : '15px', fontWeight: 700,
               color: isNext ? '#00D2BE' : '#fff',
               textTransform: 'uppercase', letterSpacing: '0.02em', lineHeight: 1.1,
               overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap',
             }}>
               {race.name}
             </div>
-            <div style={{
-              fontFamily: 'var(--font-body)', fontSize: '12px',
-              color: isNext ? 'rgba(0,210,190,0.7)' : '#9BA8A5', marginTop: '2px',
-            }}>
-              {race.circuit}
-            </div>
+            {!isMobile && (
+              <div style={{
+                fontFamily: 'var(--font-body)', fontSize: '12px',
+                color: isNext ? 'rgba(0,210,190,0.7)' : '#9BA8A5', marginTop: '2px',
+              }}>
+                {race.circuit}
+              </div>
+            )}
           </div>
         </div>
 
         {/* 右侧 */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: '22px', flexShrink: 0 }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: isMobile ? '10px' : '22px', flexShrink: 0 }}>
           <div style={{ textAlign: 'right' }}>
-            <div style={{ fontFamily: 'var(--font-mono)', fontSize: '12px', color: isNext ? '#00D2BE' : '#E5E2E1' }}>
+            <div style={{ fontFamily: 'var(--font-mono)', fontSize: isMobile ? '11px' : '12px', color: isNext ? '#00D2BE' : '#E5E2E1' }}>
               {race.dates}
             </div>
-            {race.status === 'completed' && race.podium?.[0] && (
+            {!isMobile && race.status === 'completed' && race.podium?.[0] && (
               <div style={{ fontFamily: 'var(--font-body)', fontSize: '11px', color: '#00D2BE', marginTop: '2px' }}>
                 ↳ {race.podium[0].driver}
               </div>
             )}
-            {race.status === 'next' && (
+            {!isMobile && race.status === 'next' && (
               <div style={{ fontFamily: 'var(--font-mono)', fontSize: '11px', color: '#9BA8A5', marginTop: '2px' }}>
                 正赛 {race.sessions?.find(s => s.isRace)?.time ?? ''} 本地时间
               </div>
             )}
           </div>
 
-          <Badge status={race.status} />
+          {!isMobile && <Badge status={race.status} />}
 
           {/* 展开箭头 */}
           <div style={{

@@ -10,8 +10,10 @@ import TEAMS from '../data/teams2026detail.json'
 import TeamCard   from '../components/teams/TeamCard.jsx'
 import TeamPanel  from '../components/teams/TeamPanel.jsx'
 import TeamsIntro from '../components/teams/TeamsIntro.jsx'
+import useBreakpoint from '../hooks/useBreakpoint.js'
 
 export default function Teams() {
+  const { isMobile } = useBreakpoint()
   const [activeId,  setActiveId]  = useState(null)
   const [introDone, setIntroDone] = useState(false)
 
@@ -52,7 +54,7 @@ export default function Teams() {
           background: 'linear-gradient(to bottom, rgba(0,210,190,0.04) 0%, transparent 100%)',
           borderBottom: '1px solid rgba(255,255,255,0.05)',
         }}>
-          <div style={{ maxWidth: 1200, margin: '0 auto', padding: '48px 32px 32px' }}>
+          <div style={{ maxWidth: 1200, margin: '0 auto', padding: isMobile ? '28px 16px 24px' : '48px 32px 32px' }}>
             <motion.div
               initial={{ opacity: 0, y: 16 }}
               animate={introDone ? { opacity: 1, y: 0 } : {}}
@@ -77,13 +79,13 @@ export default function Teams() {
           </div>
         </div>
 
-        {/* ── 2列卡片网格 ── */}
+        {/* ── 2列卡片网格（移动端单列） ── */}
         <div style={{
           maxWidth: 1200, margin: '0 auto',
-          padding: '32px 32px 80px',
+          padding: isMobile ? '20px 16px 60px' : '32px 32px 80px',
           display: 'grid',
-          gridTemplateColumns: 'repeat(2, 1fr)',
-          gap: 16,
+          gridTemplateColumns: isMobile ? '1fr' : 'repeat(2, 1fr)',
+          gap: isMobile ? 12 : 16,
         }}>
           {TEAMS.map((team, i) => (
             <TeamCard

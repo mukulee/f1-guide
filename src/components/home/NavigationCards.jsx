@@ -1,6 +1,7 @@
 import { useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { motion, useInView, AnimatePresence } from 'framer-motion'
+import useBreakpoint from '../../hooks/useBreakpoint'
 
 // ── 卡片数据 ──────────────────────────────────
 // module 字段 = 右上角角标，区别于主标题文字
@@ -60,7 +61,7 @@ const cardVariants = {
 }
 
 // ── 单张卡片 ──────────────────────────────────
-function NavCard({ tag, module: mod, name, desc, to, img, index }) {
+function NavCard({ tag, module: mod, name, desc, to, img, index, isMobile }) {
   const [hovered, setHovered] = useState(false)
 
   return (
@@ -81,7 +82,7 @@ function NavCard({ tag, module: mod, name, desc, to, img, index }) {
           border: hovered
             ? '1px solid rgba(0,210,190,0.85)'
             : '1px solid rgba(255,255,255,0.07)',
-          aspectRatio: '3/4',
+          aspectRatio: isMobile ? '16/9' : '3/4',
           display: 'flex',
           flexDirection: 'column',
           justifyContent: 'flex-end',
@@ -226,10 +227,13 @@ function NavCard({ tag, module: mod, name, desc, to, img, index }) {
 export default function NavigationCards() {
   const ref    = useRef(null)
   const inView = useInView(ref, { once: true, margin: '-60px' })
+  const { isMobile, isTablet } = useBreakpoint()
+
+  const gridCols = isMobile ? '1fr' : isTablet ? 'repeat(2, 1fr)' : 'repeat(5, 1fr)'
 
   return (
     <section id="modules" style={{
-      padding: '80px 0 100px',
+      padding: isMobile ? '48px 0 64px' : '80px 0 100px',
       background: 'linear-gradient(to bottom, #0D0D0D, #0a0a0a)',
     }}>
       <div className="page-container">
@@ -239,23 +243,16 @@ export default function NavigationCards() {
           initial={{ opacity: 0, y: 28 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.65, ease: [0.22, 1, 0.36, 1] }}
-          style={{ marginBottom: '40px' }}
+          style={{ marginBottom: isMobile ? '24px' : '40px' }}
         >
-          {/* 上方细线装饰 */}
           <motion.div
             initial={{ width: 0 }}
             animate={inView ? { width: '40px' } : { width: 0 }}
             transition={{ duration: 0.6, ease: 'easeOut' }}
-            style={{
-              height: '2px',
-              background: '#00D2BE',
-              marginBottom: '16px',
-              borderRadius: '2px',
-            }}
+            style={{ height: '2px', background: '#00D2BE', marginBottom: '16px', borderRadius: '2px' }}
           />
-
           <h2 style={{
-            fontFamily: 'var(--font-title)', fontSize: 'clamp(26px, 4vw, 44px)',
+            fontFamily: 'var(--font-title)', fontSize: 'clamp(24px, 4vw, 44px)',
             fontWeight: 900, letterSpacing: '0.07em', textTransform: 'uppercase',
             color: '#fff', marginBottom: '10px',
           }}>
@@ -274,14 +271,10 @@ export default function NavigationCards() {
           ref={ref}
           initial="hidden"
           animate={inView ? 'visible' : 'hidden'}
-          style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(5, 1fr)',
-            gap: '14px',
-          }}
+          style={{ display: 'grid', gridTemplateColumns: gridCols, gap: '14px' }}
         >
           {NAV_CARDS.map((card, idx) => (
-            <NavCard key={card.to} {...card} index={idx} />
+            <NavCard key={card.to} {...card} index={idx} isMobile={isMobile} />
           ))}
         </motion.div>
 

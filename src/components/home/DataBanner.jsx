@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import { motion, useInView } from 'framer-motion'
+import useBreakpoint from '../../hooks/useBreakpoint'
 
 // ── easeOutExpo CountUp Hook ─────────────────
 function useCountUp(target, duration = 1400, trigger = false) {
@@ -167,6 +168,7 @@ const STATS = [
 export default function DataBanner() {
   const ref    = useRef(null)
   const inView = useInView(ref, { once: true, margin: '-40px' })
+  const { isMobile } = useBreakpoint()
 
   return (
     <section id="explore" style={{
@@ -193,15 +195,22 @@ export default function DataBanner() {
       <div
         ref={ref}
         className="page-container"
-        style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', position: 'relative' }}
+        style={{
+          display: 'grid',
+          gridTemplateColumns: isMobile ? '1fr' : 'repeat(3, 1fr)',
+          position: 'relative',
+        }}
       >
         {STATS.map((stat, idx) => (
           <div
             key={stat.eyebrow}
             style={{
-              paddingLeft: idx > 0 ? '48px' : 0,
-              paddingRight: idx < STATS.length - 1 ? '48px' : 0,
-              borderRight: idx < STATS.length - 1
+              paddingLeft:  isMobile ? 0 : (idx > 0 ? '48px' : 0),
+              paddingRight: isMobile ? 0 : (idx < STATS.length - 1 ? '48px' : 0),
+              borderRight: (!isMobile && idx < STATS.length - 1)
+                ? '1px solid rgba(255,255,255,0.05)'
+                : 'none',
+              borderBottom: (isMobile && idx < STATS.length - 1)
                 ? '1px solid rgba(255,255,255,0.05)'
                 : 'none',
             }}
