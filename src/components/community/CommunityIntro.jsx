@@ -5,10 +5,10 @@
 
 import { useEffect, useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
+import communityVideo from '../../assets/video/community.mp4'
 
-// ── 视频占位 ──────────────────────────────────────
-// 待填入社区开场视频（建议：观众席/粉丝互动场景），留空则显示原有代码动效
-const VIDEO_SRC = '' // ← 在此填入视频链接，例如 'https://example.com/community-intro.mp4'
+// ── 本地视频（观众席/粉丝互动场景） ───────────────
+const VIDEO_SRC = communityVideo
 
 // ── 粒子数据（无视频时兜底，模拟在线人群） ────────
 const CROWD_DOTS = Array.from({ length: 36 }, (_, i) => ({

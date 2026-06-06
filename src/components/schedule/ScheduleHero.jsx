@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import { motion, useScroll, useTransform, AnimatePresence } from 'framer-motion'
+import scheduleVideo from '../../assets/video/schedule.mp4'
 
 // ── 可切换的年份 ──────────────────────────────
 const YEARS = [2024, 2025, 2026]
@@ -188,19 +189,32 @@ export default function ScheduleHero({
       overflow: 'hidden',
       background: '#0D0D0D',
     }}>
-      {/* 背景图（带视差缩放）· F1 赛场全景图 · Unsplash 免费授权 · 深色渐变兜底 */}
-      <motion.div
+      {/* ── 本地背景视频（静音自动播放循环） ── */}
+      <div style={{
+        position: 'absolute', inset: 0, zIndex: 0,
+        background: 'linear-gradient(135deg, #0a0a0a 0%, #0a1020 100%)',
+      }} />
+      <video
+        autoPlay muted loop playsInline
         style={{
-          position: 'absolute', inset: 0, zIndex: 0, scale: bgScale,
-          backgroundImage: [
-            'linear-gradient(to bottom, rgba(0,0,0,0.38) 0%, rgba(0,0,0,0.28) 40%, rgba(13,13,13,0.88) 85%, #0D0D0D 100%)',
-            "url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1920&q=80')",
-            "linear-gradient(135deg, #0a0a0a 0%, #0a1020 100%)",
-          ].join(', '),
-          backgroundSize: 'cover',
-          backgroundPosition: 'center 35%',
+          position: 'absolute', top: 0, left: 0,
+          width: '100%', height: '100%',
+          objectFit: 'cover', objectPosition: 'center center',
+          zIndex: 1, pointerEvents: 'none',
+          filter: 'brightness(0.35) saturate(1.1)',
         }}
-      />
+      >
+        <source src={scheduleVideo} type="video/mp4" />
+      </video>
+
+      {/* 渐变遮罩（保留底部过渡到内容区的效果） */}
+      <div style={{
+        position: 'absolute', inset: 0, zIndex: 2, pointerEvents: 'none',
+        background: [
+          'linear-gradient(to bottom, rgba(13,13,13,0.1) 0%, rgba(13,13,13,0.3) 50%, rgba(13,13,13,0.92) 90%, #0D0D0D 100%)',
+          'radial-gradient(ellipse 70% 60% at 50% 40%, rgba(0,210,190,0.04) 0%, transparent 70%)',
+        ].join(', '),
+      }} />
 
       {/* 赛道线条装饰 */}
       <div style={{
@@ -213,7 +227,7 @@ export default function ScheduleHero({
       {/* 主内容（带视差：上移 + 淡出 + 缩小 + 模糊） */}
       <motion.div
         style={{
-          position: 'relative', zIndex: 2, textAlign: 'center',
+          position: 'relative', zIndex: 5, textAlign: 'center',
           padding: '0 24px', width: '100%', maxWidth: '860px',
           y: contentY,
           opacity: contentOpacity,
@@ -312,7 +326,7 @@ export default function ScheduleHero({
 
       {/* 底部 meta + 过滤器栏 */}
       <div style={{
-        position: 'absolute', bottom: 0, left: 0, right: 0, zIndex: 3,
+        position: 'absolute', bottom: 0, left: 0, right: 0, zIndex: 6,
         background: 'linear-gradient(to top, rgba(13,13,13,1) 0%, rgba(13,13,13,0.85) 60%, transparent 100%)',
         padding: '20px 0 0',
       }}>

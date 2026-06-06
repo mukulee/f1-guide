@@ -5,10 +5,10 @@
 
 import { useEffect, useState, useRef } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
+import learnVideo from '../../assets/video/learn.mp4'
 
-// ── 视频占位 ──────────────────────────────────────
-// 待填入科普开场视频（建议：赛车技术特写/赛道俯拍），留空则显示原有代码动效
-const VIDEO_SRC = '' // ← 在此填入视频链接，例如 'https://example.com/learn-intro.mp4'
+// ── 本地视频（赛车技术特写/科普场景） ──────────────
+const VIDEO_SRC = learnVideo
 
 // ── 速度线（无视频时兜底） ────────────────────────
 const SPEED_LINES = Array.from({ length: 16 }, (_, i) => ({

@@ -4,10 +4,10 @@
 
 import { useEffect, useState, useRef } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
+import teamsVideo from '../../assets/video/teams.mp4'
 
-// ── 视频占位 ──────────────────────────────────────
-// 待填入车队开场视频（建议：围场/Pit Lane 场景），留空则显示原有代码动效
-const VIDEO_SRC = '' // ← 在此填入视频链接，例如 'https://example.com/teams-intro.mp4'
+// ── 本地视频（围场/Pit Lane 场景） ────────────────
+const VIDEO_SRC = teamsVideo
 
 // ── 发车格速度线（无视频时兜底） ─────────────────
 const SPEED_LINES = Array.from({ length: 14 }, (_, i) => ({

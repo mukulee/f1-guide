@@ -5,10 +5,10 @@
 
 import { useEffect, useState, useRef } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
+import standingsVideo from '../../assets/video/standings.mp4'
 
-// ── 视频占位 ──────────────────────────────────────
-// 待填入积分榜开场视频（建议：颁奖台/积分揭晓场景），留空则显示原有代码动效
-const VIDEO_SRC = '' // ← 在此填入视频链接，例如 'https://example.com/standings-intro.mp4'
+// ── 本地视频（颁奖台/积分揭晓场景） ──────────────
+const VIDEO_SRC = standingsVideo
 
 // ── 速度线数据（无视频时兜底） ────────────────────
 const SPEED_LINES = Array.from({ length: 18 }, (_, i) => ({
