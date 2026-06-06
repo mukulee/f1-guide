@@ -1,12 +1,37 @@
 // ── F1 GUIDE · API 服务层 ──────────────────────
-// 数据来源：Jolpica（Ergast API 替代方案）
-// 本地先用静态 JSON，API 成功时覆盖并缓存 24h
+// 数据来源（优先级）：
+//   1. localStorage 缓存（24h TTL）
+//   2. /api/refresh-data（Vercel CDN 代理，中国友好，每日 cron 预热）
+//   3. Jolpica 直连（备用，可能在中国较慢）
 
 import { toChineseName, toChineseTeam } from '../data/drivers.js'
 
 const BASE         = 'https://api.jolpi.ca/ergast/f1'
 const CACHE_TTL    = 24 * 60 * 60 * 1000 // 24h ms
 const TREND_TTL    =  2 * 60 * 60 * 1000 //  2h ms（赛季中更新频率更高）
+
+// ── Vercel CDN 代理：尝试从 /api/refresh-data 获取预热数据 ─────────
+// 成功时返回完整 payload，失败（如本地开发无此端点）时返回 null
+let _refreshCache = null   // 内存缓存，避免同一页面周期内重复请求
+let _refreshTime  = 0
+
+async function tryRefreshEndpoint() {
+  // 内存缓存：5 分钟内不重复请求
+  if (_refreshCache && Date.now() - _refreshTime < 5 * 60 * 1000) {
+    return _refreshCache
+  }
+  try {
+    const res = await fetch('/api/refresh-data', { signal: AbortSignal.timeout(6000) })
+    if (!res.ok) return null
+    const data = await res.json()
+    if (!data.ok) return null
+    _refreshCache = data
+    _refreshTime  = Date.now()
+    return data
+  } catch {
+    return null   // 本地开发无此端点，静默失败
+  }
+}
 
 // ── 通用缓存工具 ───────────────────────────────
 function cacheGet(key, ttl = CACHE_TTL) {
@@ -107,12 +132,22 @@ export async function fetchFastestLap(year, round) {
 export async function fetchDriverStandings(year) {
   const currentYear = new Date().getFullYear()
   const y = year ?? currentYear
-  const endpoint = y === currentYear ? 'current' : String(y)
   const cacheKey = `f1_driver_standings_${y}`
   const cached   = cacheGet(cacheKey)
   if (cached) return cached
 
+  // 策略一：Vercel CDN 代理（生产环境，中国友好，cron 每日预热）
+  if (y === currentYear) {
+    const refreshData = await tryRefreshEndpoint()
+    if (refreshData?.driverStandings?.length) {
+      cacheSet(cacheKey, refreshData.driverStandings)
+      return refreshData.driverStandings
+    }
+  }
+
+  // 策略二：直连 Jolpica
   try {
+    const endpoint = y === currentYear ? 'current' : String(y)
     const res  = await fetch(`${BASE}/${endpoint}/driverStandings.json`, { signal: AbortSignal.timeout(8000) })
     if (!res.ok) throw new Error(`HTTP ${res.status}`)
     const json = await res.json()
@@ -129,12 +164,22 @@ export async function fetchDriverStandings(year) {
 export async function fetchConstructorStandings(year) {
   const currentYear = new Date().getFullYear()
   const y = year ?? currentYear
-  const endpoint = y === currentYear ? 'current' : String(y)
   const cacheKey = `f1_constructor_standings_${y}`
   const cached   = cacheGet(cacheKey)
   if (cached) return cached
 
+  // 策略一：Vercel CDN 代理（生产环境，中国友好，cron 每日预热）
+  if (y === currentYear) {
+    const refreshData = await tryRefreshEndpoint()
+    if (refreshData?.constructorStandings?.length) {
+      cacheSet(cacheKey, refreshData.constructorStandings)
+      return refreshData.constructorStandings
+    }
+  }
+
+  // 策略二：直连 Jolpica
   try {
+    const endpoint = y === currentYear ? 'current' : String(y)
     const res  = await fetch(`${BASE}/${endpoint}/constructorStandings.json`, { signal: AbortSignal.timeout(8000) })
     if (!res.ok) throw new Error(`HTTP ${res.status}`)
     const json = await res.json()
